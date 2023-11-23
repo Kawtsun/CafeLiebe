@@ -1,5 +1,4 @@
 ﻿Public Class frmMainMenu
-
     Private Sub frmMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnCoffee.PerformClick()
     End Sub
@@ -51,7 +50,6 @@
         btnCake.BackColor = System.Drawing.Color.FromArgb(234, 225, 210)
         btnSorbet.BackColor = System.Drawing.Color.White
     End Sub
-
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
         frmPaymentMenu.Show()
         Me.Hide()

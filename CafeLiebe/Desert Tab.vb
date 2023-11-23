@@ -1,4 +1,8 @@
 ﻿Public Class frmDesertTab
+    Public Property nameDesert As String
+    Public Property quantityDesert As Integer
+    Public Property priceDesert As Integer
+    Public Property totalAmountDesert As Integer
     Dim qty1, qty2, qty3, qty4, qty5, qty6, qty7, qty8 As Integer
 
     Private Sub btnSQAdd01_Click(sender As Object, e As EventArgs) Handles btnSQAdd01.Click
@@ -103,6 +107,94 @@
         If qty8 < 10 Then
             qty8 = qty8 + 1
             lblSQuantity08.Text = qty8
+        End If
+    End Sub
+
+    Private Sub btnSBuy01_Click(sender As Object, e As EventArgs) Handles btnSBuy01.Click
+        nameDesert = "Desert 1"
+        quantityDesert = lblSQuantity01.Text
+        priceDesert = lblSPrice01.Text
+        totalAmountDesert = quantityDesert * priceDesert
+        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+        If form1Instance IsNot Nothing Then
+            form1Instance.AddDataToGrid(nameDesert, quantityDesert, totalAmountDesert)
+        End If
+    End Sub
+
+    Private Sub btnSBuy02_Click(sender As Object, e As EventArgs) Handles btnSBuy02.Click
+        nameDesert = "Desert 2"
+        quantityDesert = lblSQuantity02.Text
+        priceDesert = lblSPrice02.Text
+        totalAmountDesert = quantityDesert * priceDesert
+        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+        If form1Instance IsNot Nothing Then
+            form1Instance.AddDataToGrid(nameDesert, quantityDesert, totalAmountDesert)
+        End If
+    End Sub
+
+    Private Sub btnSBuy03_Click(sender As Object, e As EventArgs) Handles btnSBuy03.Click
+        nameDesert = "Desert 3"
+        quantityDesert = lblSQuantity03.Text
+        priceDesert = lblSPrice03.Text
+        totalAmountDesert = quantityDesert * priceDesert
+        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+        If form1Instance IsNot Nothing Then
+            form1Instance.AddDataToGrid(nameDesert, quantityDesert, totalAmountDesert)
+        End If
+    End Sub
+
+    Private Sub btnSBuy04_Click(sender As Object, e As EventArgs) Handles btnSBuy04.Click
+        nameDesert = "Desert 4"
+        quantityDesert = lblSQuantity04.Text
+        priceDesert = lblSPrice04.Text
+        totalAmountDesert = quantityDesert * priceDesert
+        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+        If form1Instance IsNot Nothing Then
+            form1Instance.AddDataToGrid(nameDesert, quantityDesert, totalAmountDesert)
+        End If
+    End Sub
+
+    Private Sub btnSBuy05_Click(sender As Object, e As EventArgs) Handles btnSBuy05.Click
+        nameDesert = "Desert 5"
+        quantityDesert = lblSQuantity05.Text
+        priceDesert = lblSPrice05.Text
+        totalAmountDesert = quantityDesert * priceDesert
+        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+        If form1Instance IsNot Nothing Then
+            form1Instance.AddDataToGrid(nameDesert, quantityDesert, totalAmountDesert)
+        End If
+    End Sub
+
+    Private Sub btnSBuy06_Click(sender As Object, e As EventArgs) Handles btnSBuy06.Click
+        nameDesert = "Desert 6"
+        quantityDesert = lblSQuantity06.Text
+        priceDesert = lblSPrice06.Text
+        totalAmountDesert = quantityDesert * priceDesert
+        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+        If form1Instance IsNot Nothing Then
+            form1Instance.AddDataToGrid(nameDesert, quantityDesert, totalAmountDesert)
+        End If
+    End Sub
+
+    Private Sub btnSBuy07_Click(sender As Object, e As EventArgs) Handles btnSBuy07.Click
+        nameDesert = "Desert 7"
+        quantityDesert = lblSQuantity07.Text
+        priceDesert = lblSPrice07.Text
+        totalAmountDesert = quantityDesert * priceDesert
+        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+        If form1Instance IsNot Nothing Then
+            form1Instance.AddDataToGrid(nameDesert, quantityDesert, totalAmountDesert)
+        End If
+    End Sub
+
+    Private Sub btnSBuy08_Click(sender As Object, e As EventArgs) Handles btnSBuy08.Click
+        nameDesert = "Desert 8"
+        quantityDesert = lblSQuantity08.Text
+        priceDesert = lblSPrice08.Text
+        totalAmountDesert = quantityDesert * priceDesert
+        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+        If form1Instance IsNot Nothing Then
+            form1Instance.AddDataToGrid(nameDesert, quantityDesert, totalAmountDesert)
         End If
     End Sub
 End Class
