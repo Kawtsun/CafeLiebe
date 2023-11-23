@@ -54,4 +54,52 @@
     Private Sub btnCancelAll_Click(sender As Object, e As EventArgs) Handles btnCancelAll.Click
         DataGridView2.Rows.Clear()
     End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtTendered.Clear()
+    End Sub
+
+    Private Sub btn1_Click(sender As Object, e As EventArgs) Handles btn1.Click
+        txtTendered.Text = Val(txtTendered.Text) + 1
+    End Sub
+
+    Private Sub btn5_Click(sender As Object, e As EventArgs) Handles btn5.Click
+        txtTendered.Text = Val(txtTendered.Text) + 5
+    End Sub
+
+    Private Sub btn10_Click(sender As Object, e As EventArgs) Handles btn10.Click
+        txtTendered.Text = Val(txtTendered.Text) + 10
+    End Sub
+
+    Private Sub btn20_Click(sender As Object, e As EventArgs) Handles btn20.Click
+        txtTendered.Text = Val(txtTendered.Text) + 20
+    End Sub
+
+    Private Sub btn50_Click(sender As Object, e As EventArgs) Handles btn50.Click
+        txtTendered.Text = Val(txtTendered.Text) + 50
+    End Sub
+
+    Private Sub btn100_Click(sender As Object, e As EventArgs) Handles btn100.Click
+        txtTendered.Text = Val(txtTendered.Text) + 100
+    End Sub
+
+    Private Sub btn200_Click(sender As Object, e As EventArgs) Handles btn200.Click
+        txtTendered.Text = Val(txtTendered.Text) + 200
+    End Sub
+
+    Private Sub btn500_Click(sender As Object, e As EventArgs) Handles btn500.Click
+        txtTendered.Text = Val(txtTendered.Text) + 500
+    End Sub
+
+    Private Sub btn1000_Click(sender As Object, e As EventArgs) Handles btn1000.Click
+        txtTendered.Text = Val(txtTendered.Text) + 1000
+    End Sub
+
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+
+    End Sub
+
+    Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
+
+    End Sub
 End Class
