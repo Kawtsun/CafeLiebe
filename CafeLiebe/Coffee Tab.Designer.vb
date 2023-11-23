@@ -161,9 +161,9 @@ Partial Class frmCoffeeTab
         lblCQuantity05.ForeColor = Color.White
         lblCQuantity05.Location = New Point(40, 439)
         lblCQuantity05.Name = "lblCQuantity05"
-        lblCQuantity05.Size = New Size(19, 16)
+        lblCQuantity05.Size = New Size(13, 16)
         lblCQuantity05.TabIndex = 76
-        lblCQuantity05.Text = "00"
+        lblCQuantity05.Text = "0"
         ' 
         ' lblCQuantity07
         ' 
@@ -173,9 +173,9 @@ Partial Class frmCoffeeTab
         lblCQuantity07.ForeColor = Color.White
         lblCQuantity07.Location = New Point(348, 439)
         lblCQuantity07.Name = "lblCQuantity07"
-        lblCQuantity07.Size = New Size(19, 16)
+        lblCQuantity07.Size = New Size(13, 16)
         lblCQuantity07.TabIndex = 114
-        lblCQuantity07.Text = "00"
+        lblCQuantity07.Text = "0"
         ' 
         ' btnCQMinus05
         ' 
@@ -337,9 +337,9 @@ Partial Class frmCoffeeTab
         lblCQuantity08.ForeColor = Color.White
         lblCQuantity08.Location = New Point(502, 439)
         lblCQuantity08.Name = "lblCQuantity08"
-        lblCQuantity08.Size = New Size(19, 16)
+        lblCQuantity08.Size = New Size(13, 16)
         lblCQuantity08.TabIndex = 107
-        lblCQuantity08.Text = "00"
+        lblCQuantity08.Text = "0"
         ' 
         ' btnCQMinus08
         ' 
@@ -437,9 +437,9 @@ Partial Class frmCoffeeTab
         lblCQuantity06.ForeColor = Color.White
         lblCQuantity06.Location = New Point(194, 439)
         lblCQuantity06.Name = "lblCQuantity06"
-        lblCQuantity06.Size = New Size(19, 16)
+        lblCQuantity06.Size = New Size(13, 16)
         lblCQuantity06.TabIndex = 100
-        lblCQuantity06.Text = "00"
+        lblCQuantity06.Text = "0"
         ' 
         ' btnCQMinus06
         ' 
@@ -537,9 +537,9 @@ Partial Class frmCoffeeTab
         lblCQuantity03.ForeColor = Color.White
         lblCQuantity03.Location = New Point(348, 204)
         lblCQuantity03.Name = "lblCQuantity03"
-        lblCQuantity03.Size = New Size(19, 16)
+        lblCQuantity03.Size = New Size(13, 16)
         lblCQuantity03.TabIndex = 93
-        lblCQuantity03.Text = "00"
+        lblCQuantity03.Text = "0"
         ' 
         ' btnCQMinus03
         ' 
@@ -637,9 +637,9 @@ Partial Class frmCoffeeTab
         lblCQuantity04.ForeColor = Color.White
         lblCQuantity04.Location = New Point(502, 204)
         lblCQuantity04.Name = "lblCQuantity04"
-        lblCQuantity04.Size = New Size(19, 16)
+        lblCQuantity04.Size = New Size(13, 16)
         lblCQuantity04.TabIndex = 86
-        lblCQuantity04.Text = "00"
+        lblCQuantity04.Text = "0"
         ' 
         ' btnCQMinus04
         ' 
@@ -737,9 +737,9 @@ Partial Class frmCoffeeTab
         lblCQuantity02.ForeColor = Color.White
         lblCQuantity02.Location = New Point(194, 204)
         lblCQuantity02.Name = "lblCQuantity02"
-        lblCQuantity02.Size = New Size(19, 16)
+        lblCQuantity02.Size = New Size(13, 16)
         lblCQuantity02.TabIndex = 75
-        lblCQuantity02.Text = "00"
+        lblCQuantity02.Text = "0"
         ' 
         ' btnCQMinus02
         ' 
@@ -837,9 +837,9 @@ Partial Class frmCoffeeTab
         lblCQuantity01.ForeColor = Color.White
         lblCQuantity01.Location = New Point(40, 204)
         lblCQuantity01.Name = "lblCQuantity01"
-        lblCQuantity01.Size = New Size(19, 16)
+        lblCQuantity01.Size = New Size(13, 16)
         lblCQuantity01.TabIndex = 65
-        lblCQuantity01.Text = "00"
+        lblCQuantity01.Text = "0"
         ' 
         ' btnCQMinus01
         ' 
