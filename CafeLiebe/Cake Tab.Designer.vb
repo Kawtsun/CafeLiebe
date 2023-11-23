@@ -173,9 +173,9 @@ Partial Class frmCakeTab
         lblCaQuantity05.ForeColor = Color.White
         lblCaQuantity05.Location = New Point(40, 439)
         lblCaQuantity05.Name = "lblCaQuantity05"
-        lblCaQuantity05.Size = New Size(19, 16)
+        lblCaQuantity05.Size = New Size(13, 16)
         lblCaQuantity05.TabIndex = 133
-        lblCaQuantity05.Text = "00"
+        lblCaQuantity05.Text = "0"
         ' 
         ' lblCaQuantity07
         ' 
@@ -185,9 +185,9 @@ Partial Class frmCakeTab
         lblCaQuantity07.ForeColor = Color.White
         lblCaQuantity07.Location = New Point(348, 439)
         lblCaQuantity07.Name = "lblCaQuantity07"
-        lblCaQuantity07.Size = New Size(19, 16)
+        lblCaQuantity07.Size = New Size(13, 16)
         lblCaQuantity07.TabIndex = 171
-        lblCaQuantity07.Text = "00"
+        lblCaQuantity07.Text = "0"
         ' 
         ' btnCaQMinus05
         ' 
@@ -349,9 +349,9 @@ Partial Class frmCakeTab
         lblCaQuantity08.ForeColor = Color.White
         lblCaQuantity08.Location = New Point(502, 439)
         lblCaQuantity08.Name = "lblCaQuantity08"
-        lblCaQuantity08.Size = New Size(19, 16)
+        lblCaQuantity08.Size = New Size(13, 16)
         lblCaQuantity08.TabIndex = 164
-        lblCaQuantity08.Text = "00"
+        lblCaQuantity08.Text = "0"
         ' 
         ' btnCaQMinus08
         ' 
@@ -449,9 +449,9 @@ Partial Class frmCakeTab
         lblCaQuantity06.ForeColor = Color.White
         lblCaQuantity06.Location = New Point(194, 439)
         lblCaQuantity06.Name = "lblCaQuantity06"
-        lblCaQuantity06.Size = New Size(19, 16)
+        lblCaQuantity06.Size = New Size(13, 16)
         lblCaQuantity06.TabIndex = 157
-        lblCaQuantity06.Text = "00"
+        lblCaQuantity06.Text = "0"
         ' 
         ' btnCaQMinus06
         ' 
@@ -549,9 +549,9 @@ Partial Class frmCakeTab
         lblCaQuantity03.ForeColor = Color.White
         lblCaQuantity03.Location = New Point(348, 204)
         lblCaQuantity03.Name = "lblCaQuantity03"
-        lblCaQuantity03.Size = New Size(19, 16)
+        lblCaQuantity03.Size = New Size(13, 16)
         lblCaQuantity03.TabIndex = 150
-        lblCaQuantity03.Text = "00"
+        lblCaQuantity03.Text = "0"
         ' 
         ' btnCaQMinus03
         ' 
@@ -649,9 +649,9 @@ Partial Class frmCakeTab
         lblCaQuantity04.ForeColor = Color.White
         lblCaQuantity04.Location = New Point(502, 204)
         lblCaQuantity04.Name = "lblCaQuantity04"
-        lblCaQuantity04.Size = New Size(19, 16)
+        lblCaQuantity04.Size = New Size(13, 16)
         lblCaQuantity04.TabIndex = 143
-        lblCaQuantity04.Text = "00"
+        lblCaQuantity04.Text = "0"
         ' 
         ' btnCaQMinus04
         ' 
@@ -749,9 +749,9 @@ Partial Class frmCakeTab
         lblCaQuantity02.ForeColor = Color.White
         lblCaQuantity02.Location = New Point(194, 204)
         lblCaQuantity02.Name = "lblCaQuantity02"
-        lblCaQuantity02.Size = New Size(19, 16)
+        lblCaQuantity02.Size = New Size(13, 16)
         lblCaQuantity02.TabIndex = 132
-        lblCaQuantity02.Text = "00"
+        lblCaQuantity02.Text = "0"
         ' 
         ' btnCaQMinus02
         ' 
@@ -849,9 +849,9 @@ Partial Class frmCakeTab
         lblCaQuantity01.ForeColor = Color.White
         lblCaQuantity01.Location = New Point(40, 204)
         lblCaQuantity01.Name = "lblCaQuantity01"
-        lblCaQuantity01.Size = New Size(19, 16)
+        lblCaQuantity01.Size = New Size(13, 16)
         lblCaQuantity01.TabIndex = 122
-        lblCaQuantity01.Text = "00"
+        lblCaQuantity01.Text = "0"
         lblCaQuantity01.TextAlign = ContentAlignment.TopCenter
         ' 
         ' btnCaQMinus01

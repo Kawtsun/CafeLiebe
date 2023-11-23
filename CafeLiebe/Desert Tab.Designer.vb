@@ -173,9 +173,9 @@ Partial Class frmDesertTab
         lblSQuantity05.ForeColor = Color.White
         lblSQuantity05.Location = New Point(40, 439)
         lblSQuantity05.Name = "lblSQuantity05"
-        lblSQuantity05.Size = New Size(19, 16)
+        lblSQuantity05.Size = New Size(13, 16)
         lblSQuantity05.TabIndex = 190
-        lblSQuantity05.Text = "00"
+        lblSQuantity05.Text = "0"
         ' 
         ' lblSQuantity07
         ' 
@@ -185,9 +185,9 @@ Partial Class frmDesertTab
         lblSQuantity07.ForeColor = Color.White
         lblSQuantity07.Location = New Point(348, 439)
         lblSQuantity07.Name = "lblSQuantity07"
-        lblSQuantity07.Size = New Size(19, 16)
+        lblSQuantity07.Size = New Size(13, 16)
         lblSQuantity07.TabIndex = 228
-        lblSQuantity07.Text = "00"
+        lblSQuantity07.Text = "0"
         ' 
         ' btnSQMinus05
         ' 
@@ -349,9 +349,9 @@ Partial Class frmDesertTab
         lblSQuantity08.ForeColor = Color.White
         lblSQuantity08.Location = New Point(502, 439)
         lblSQuantity08.Name = "lblSQuantity08"
-        lblSQuantity08.Size = New Size(19, 16)
+        lblSQuantity08.Size = New Size(13, 16)
         lblSQuantity08.TabIndex = 221
-        lblSQuantity08.Text = "00"
+        lblSQuantity08.Text = "0"
         ' 
         ' btnSQMinus08
         ' 
@@ -449,9 +449,9 @@ Partial Class frmDesertTab
         lblSQuantity06.ForeColor = Color.White
         lblSQuantity06.Location = New Point(194, 439)
         lblSQuantity06.Name = "lblSQuantity06"
-        lblSQuantity06.Size = New Size(19, 16)
+        lblSQuantity06.Size = New Size(13, 16)
         lblSQuantity06.TabIndex = 214
-        lblSQuantity06.Text = "00"
+        lblSQuantity06.Text = "0"
         ' 
         ' btnSQMinus06
         ' 
@@ -549,9 +549,9 @@ Partial Class frmDesertTab
         lblSQuantity03.ForeColor = Color.White
         lblSQuantity03.Location = New Point(348, 204)
         lblSQuantity03.Name = "lblSQuantity03"
-        lblSQuantity03.Size = New Size(19, 16)
+        lblSQuantity03.Size = New Size(13, 16)
         lblSQuantity03.TabIndex = 207
-        lblSQuantity03.Text = "00"
+        lblSQuantity03.Text = "0"
         ' 
         ' btnSQMinus03
         ' 
@@ -649,9 +649,9 @@ Partial Class frmDesertTab
         lblSQuantity04.ForeColor = Color.White
         lblSQuantity04.Location = New Point(502, 204)
         lblSQuantity04.Name = "lblSQuantity04"
-        lblSQuantity04.Size = New Size(19, 16)
+        lblSQuantity04.Size = New Size(13, 16)
         lblSQuantity04.TabIndex = 200
-        lblSQuantity04.Text = "00"
+        lblSQuantity04.Text = "0"
         ' 
         ' btnSQMinus04
         ' 
@@ -749,9 +749,9 @@ Partial Class frmDesertTab
         lblSQuantity02.ForeColor = Color.White
         lblSQuantity02.Location = New Point(194, 204)
         lblSQuantity02.Name = "lblSQuantity02"
-        lblSQuantity02.Size = New Size(19, 16)
+        lblSQuantity02.Size = New Size(13, 16)
         lblSQuantity02.TabIndex = 189
-        lblSQuantity02.Text = "00"
+        lblSQuantity02.Text = "0"
         ' 
         ' btnSQMinus02
         ' 
@@ -849,9 +849,9 @@ Partial Class frmDesertTab
         lblSQuantity01.ForeColor = Color.White
         lblSQuantity01.Location = New Point(40, 204)
         lblSQuantity01.Name = "lblSQuantity01"
-        lblSQuantity01.Size = New Size(19, 16)
+        lblSQuantity01.Size = New Size(13, 16)
         lblSQuantity01.TabIndex = 179
-        lblSQuantity01.Text = "00"
+        lblSQuantity01.Text = "0"
         lblSQuantity01.TextAlign = ContentAlignment.TopCenter
         ' 
         ' btnSQMinus01
