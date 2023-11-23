@@ -36,6 +36,7 @@ Partial Class frmPaymentMenu
         btnCancelAll = New Button()
         lblItems = New Label()
         pnlList = New Panel()
+        DataGridView2 = New DataGridView()
         pnlCalcu = New Panel()
         btn1000 = New Button()
         btn500 = New Button()
@@ -73,6 +74,8 @@ Partial Class frmPaymentMenu
         pnlLeft.SuspendLayout()
         pnlBottom.SuspendLayout()
         CType(picItem, ComponentModel.ISupportInitialize).BeginInit()
+        pnlList.SuspendLayout()
+        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
         pnlCalcu.SuspendLayout()
         pnlMiddle.SuspendLayout()
         CType(picCalcu, ComponentModel.ISupportInitialize).BeginInit()
@@ -249,10 +252,21 @@ Partial Class frmPaymentMenu
         ' pnlList
         ' 
         pnlList.BackColor = Color.White
+        pnlList.Controls.Add(DataGridView2)
         pnlList.Location = New Point(19, 33)
         pnlList.Name = "pnlList"
         pnlList.Size = New Size(417, 403)
         pnlList.TabIndex = 4
+        ' 
+        ' DataGridView2
+        ' 
+        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView2.Location = New Point(0, 0)
+        DataGridView2.Name = "DataGridView2"
+        DataGridView2.ReadOnly = True
+        DataGridView2.RowTemplate.Height = 25
+        DataGridView2.Size = New Size(417, 400)
+        DataGridView2.TabIndex = 0
         ' 
         ' pnlCalcu
         ' 
@@ -719,6 +733,8 @@ Partial Class frmPaymentMenu
         pnlBottom.ResumeLayout(False)
         pnlBottom.PerformLayout()
         CType(picItem, ComponentModel.ISupportInitialize).EndInit()
+        pnlList.ResumeLayout(False)
+        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
         pnlCalcu.ResumeLayout(False)
         pnlMiddle.ResumeLayout(False)
         pnlMiddle.PerformLayout()
@@ -774,4 +790,5 @@ Partial Class frmPaymentMenu
     Friend WithEvents btnBaack As Button
     Friend WithEvents lblDine As Label
     Friend WithEvents lblTake As Label
+    Friend WithEvents DataGridView2 As DataGridView
 End Class

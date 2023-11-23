@@ -1,4 +1,7 @@
 ﻿Public Class frmMainMenu
+    Public Function GetDataGridView() As DataGridView
+        Return DataGridView1
+    End Function
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         frmHomeWindow.Show()
         Me.Hide()
