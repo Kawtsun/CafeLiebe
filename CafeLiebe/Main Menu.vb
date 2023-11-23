@@ -1,4 +1,5 @@
 ﻿Public Class frmMainMenu
+    Dim index As Integer
     Private Sub frmMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnCoffee.PerformClick()
     End Sub
@@ -56,5 +57,16 @@
     End Sub
     Public Sub AddDataToGrid(data1 As String, data2 As String, data3 As String)
         DataGridView1.Rows.Add(data1, data2, data3)
+    End Sub
+
+    Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
+        'Select item (row) then click button to remove from Grid
+        If DataGridView1.SelectedRows.Count > 0 Then
+            For i As Integer = DataGridView1.SelectedRows.Count - 1 To 0 Step -1
+                DataGridView1.Rows.RemoveAt(DataGridView1.SelectedRows(i).Index)
+            Next
+        Else
+            MsgBox("No item selected!")
+        End If
     End Sub
 End Class
