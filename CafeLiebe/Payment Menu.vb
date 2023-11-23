@@ -50,4 +50,8 @@
             MsgBox("No item selected!")
         End If
     End Sub
+
+    Private Sub btnCancelAll_Click(sender As Object, e As EventArgs) Handles btnCancelAll.Click
+        DataGridView2.Rows.Clear()
+    End Sub
 End Class
