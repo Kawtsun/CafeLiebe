@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class frmHomeWindow
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,13 +23,13 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         pnlTop = New Panel()
+        lblEhhh = New Label()
         btnExit = New Button()
         picStartTop = New PictureBox()
         btnContinue = New Button()
         picLogo = New PictureBox()
         picName = New PictureBox()
         lblTap = New Label()
-        lblEhhh = New Label()
         pnlTop.SuspendLayout()
         CType(picStartTop, ComponentModel.ISupportInitialize).BeginInit()
         CType(picLogo, ComponentModel.ISupportInitialize).BeginInit()
@@ -47,6 +47,18 @@ Partial Class Form1
         pnlTop.Name = "pnlTop"
         pnlTop.Size = New Size(934, 40)
         pnlTop.TabIndex = 0
+        ' 
+        ' lblEhhh
+        ' 
+        lblEhhh.AutoSize = True
+        lblEhhh.BackColor = Color.Transparent
+        lblEhhh.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        lblEhhh.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
+        lblEhhh.Location = New Point(60, 11)
+        lblEhhh.Name = "lblEhhh"
+        lblEhhh.Size = New Size(180, 17)
+        lblEhhh.TabIndex = 4
+        lblEhhh.Text = "Welcome beloved customer..."
         ' 
         ' btnExit
         ' 
@@ -119,19 +131,7 @@ Partial Class Form1
         lblTap.TabIndex = 2
         lblTap.Text = "Tap Anywhere to Continue..."
         ' 
-        ' lblEhhh
-        ' 
-        lblEhhh.AutoSize = True
-        lblEhhh.BackColor = Color.Transparent
-        lblEhhh.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
-        lblEhhh.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
-        lblEhhh.Location = New Point(60, 11)
-        lblEhhh.Name = "lblEhhh"
-        lblEhhh.Size = New Size(180, 17)
-        lblEhhh.TabIndex = 4
-        lblEhhh.Text = "Welcome beloved customer..."
-        ' 
-        ' Form1
+        ' frmHomeWindow
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -143,7 +143,7 @@ Partial Class Form1
         Controls.Add(pnlTop)
         Controls.Add(btnContinue)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Form1"
+        Name = "frmHomeWindow"
         StartPosition = FormStartPosition.CenterScreen
         Text = " "
         pnlTop.ResumeLayout(False)

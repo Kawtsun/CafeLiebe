@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form6
+Partial Class frmPaymentMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -697,7 +697,7 @@ Partial Class Form6
         lblDineTake.TabIndex = 233
         lblDineTake.Text = "Hello beloved customer!"
         ' 
-        ' Form6
+        ' frmPaymentMenu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -708,7 +708,7 @@ Partial Class Form6
         Controls.Add(pnlLeft)
         Controls.Add(pnlTop)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Form6"
+        Name = "frmPaymentMenu"
         StartPosition = FormStartPosition.CenterScreen
         Text = " "
         pnlTop.ResumeLayout(False)

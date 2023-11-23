@@ -1,11 +1,11 @@
-﻿Public Class Form6
+﻿Public Class frmPaymentMenu
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        Form2.Show()
+        frmMainMenu.Show()
         Me.Hide()
     End Sub
 
     Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
-        Form1.Show()
+        frmHomeWindow.Show()
         Me.Hide()
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form3
+Partial Class frmCoffeeTab
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -917,7 +917,7 @@ Partial Class Form3
         lblItems.TabIndex = 118
         lblItems.Text = "Choose your type of coffee..."
         ' 
-        ' Form3
+        ' frmCoffeeTab
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -981,7 +981,7 @@ Partial Class Form3
         Controls.Add(picCoffee01)
         Controls.Add(Panel3)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Form3"
+        Name = "frmCoffeeTab"
         Text = " "
         CType(picCoffee05, ComponentModel.ISupportInitialize).EndInit()
         CType(picCoffee07, ComponentModel.ISupportInitialize).EndInit()

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form4
+Partial Class frmCakeTab
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -918,7 +918,7 @@ Partial Class Form4
         btnCaBuy01.Text = "Buy"
         btnCaBuy01.UseVisualStyleBackColor = False
         ' 
-        ' Form4
+        ' frmCakeTab
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -982,7 +982,7 @@ Partial Class Form4
         Controls.Add(picSorbet01)
         Controls.Add(Panel3)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Form4"
+        Name = "frmCakeTab"
         Text = " "
         CType(picCake05, ComponentModel.ISupportInitialize).EndInit()
         CType(picCake07, ComponentModel.ISupportInitialize).EndInit()

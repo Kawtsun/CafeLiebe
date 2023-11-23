@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form2
+Partial Class frmMainMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -27,6 +27,7 @@ Partial Class Form2
         btnBack = New Button()
         picStartTop = New PictureBox()
         pnlLeft = New Panel()
+        btnRemove = New Button()
         btnCancelAll = New Button()
         btnConfirm = New Button()
         picItem = New PictureBox()
@@ -36,7 +37,6 @@ Partial Class Form2
         btnCake = New Button()
         btnCoffee = New Button()
         pnlOrder = New Panel()
-        btnRemove = New Button()
         pnlTop.SuspendLayout()
         CType(picStartTop, ComponentModel.ISupportInitialize).BeginInit()
         pnlLeft.SuspendLayout()
@@ -109,6 +109,21 @@ Partial Class Form2
         pnlLeft.Name = "pnlLeft"
         pnlLeft.Size = New Size(287, 521)
         pnlLeft.TabIndex = 2
+        ' 
+        ' btnRemove
+        ' 
+        btnRemove.BackColor = Color.FromArgb(CByte(254), CByte(245), CByte(230))
+        btnRemove.FlatAppearance.BorderColor = Color.White
+        btnRemove.FlatAppearance.BorderSize = 0
+        btnRemove.FlatStyle = FlatStyle.Flat
+        btnRemove.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        btnRemove.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
+        btnRemove.Location = New Point(19, 488)
+        btnRemove.Name = "btnRemove"
+        btnRemove.Size = New Size(132, 27)
+        btnRemove.TabIndex = 7
+        btnRemove.Text = "Remove an Item..."
+        btnRemove.UseVisualStyleBackColor = False
         ' 
         ' btnCancelAll
         ' 
@@ -225,22 +240,7 @@ Partial Class Form2
         pnlOrder.Size = New Size(647, 521)
         pnlOrder.TabIndex = 3
         ' 
-        ' btnRemove
-        ' 
-        btnRemove.BackColor = Color.FromArgb(CByte(254), CByte(245), CByte(230))
-        btnRemove.FlatAppearance.BorderColor = Color.White
-        btnRemove.FlatAppearance.BorderSize = 0
-        btnRemove.FlatStyle = FlatStyle.Flat
-        btnRemove.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
-        btnRemove.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
-        btnRemove.Location = New Point(19, 488)
-        btnRemove.Name = "btnRemove"
-        btnRemove.Size = New Size(132, 27)
-        btnRemove.TabIndex = 7
-        btnRemove.Text = "Remove an Item..."
-        btnRemove.UseVisualStyleBackColor = False
-        ' 
-        ' Form2
+        ' frmMainMenu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -249,7 +249,7 @@ Partial Class Form2
         Controls.Add(pnlLeft)
         Controls.Add(pnlTop)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Form2"
+        Name = "frmMainMenu"
         StartPosition = FormStartPosition.CenterScreen
         Text = " "
         pnlTop.ResumeLayout(False)

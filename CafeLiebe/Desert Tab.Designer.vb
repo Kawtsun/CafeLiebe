@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form5
+Partial Class frmDesertTab
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -918,7 +918,7 @@ Partial Class Form5
         btnSBuy01.Text = "Buy"
         btnSBuy01.UseVisualStyleBackColor = False
         ' 
-        ' Form5
+        ' frmDesertTab
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -982,7 +982,7 @@ Partial Class Form5
         Controls.Add(picSorbet01)
         Controls.Add(Panel3)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Form5"
+        Name = "frmDesertTab"
         Text = " "
         CType(picSorbet05, ComponentModel.ISupportInitialize).EndInit()
         CType(picSorbet07, ComponentModel.ISupportInitialize).EndInit()
