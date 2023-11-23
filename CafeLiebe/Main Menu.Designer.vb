@@ -33,14 +33,20 @@ Partial Class frmMainMenu
         picItem = New PictureBox()
         lblItems = New Label()
         pnlList = New Panel()
+        DataGridView1 = New DataGridView()
         btnSorbet = New Button()
         btnCake = New Button()
         btnCoffee = New Button()
         pnlOrder = New Panel()
+        Item = New DataGridViewTextBoxColumn()
+        QTY = New DataGridViewTextBoxColumn()
+        Price = New DataGridViewTextBoxColumn()
         pnlTop.SuspendLayout()
         CType(picStartTop, ComponentModel.ISupportInitialize).BeginInit()
         pnlLeft.SuspendLayout()
         CType(picItem, ComponentModel.ISupportInitialize).BeginInit()
+        pnlList.SuspendLayout()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' pnlTop
@@ -180,10 +186,22 @@ Partial Class frmMainMenu
         ' pnlList
         ' 
         pnlList.BackColor = Color.White
+        pnlList.Controls.Add(DataGridView1)
         pnlList.Location = New Point(19, 158)
         pnlList.Name = "pnlList"
         pnlList.Size = New Size(250, 278)
         pnlList.TabIndex = 4
+        ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Item, QTY, Price})
+        DataGridView1.Location = New Point(0, 0)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.ReadOnly = True
+        DataGridView1.RowTemplate.Height = 25
+        DataGridView1.Size = New Size(250, 278)
+        DataGridView1.TabIndex = 4
         ' 
         ' btnSorbet
         ' 
@@ -240,6 +258,27 @@ Partial Class frmMainMenu
         pnlOrder.Size = New Size(647, 521)
         pnlOrder.TabIndex = 3
         ' 
+        ' Item
+        ' 
+        Item.HeaderText = "Item"
+        Item.Name = "Item"
+        Item.ReadOnly = True
+        Item.Width = 120
+        ' 
+        ' QTY
+        ' 
+        QTY.HeaderText = "QTY"
+        QTY.Name = "QTY"
+        QTY.ReadOnly = True
+        QTY.Width = 30
+        ' 
+        ' Price
+        ' 
+        Price.HeaderText = "Price"
+        Price.Name = "Price"
+        Price.ReadOnly = True
+        Price.Width = 60
+        ' 
         ' frmMainMenu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -258,6 +297,8 @@ Partial Class frmMainMenu
         pnlLeft.ResumeLayout(False)
         pnlLeft.PerformLayout()
         CType(picItem, ComponentModel.ISupportInitialize).EndInit()
+        pnlList.ResumeLayout(False)
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -276,4 +317,8 @@ Partial Class frmMainMenu
     Friend WithEvents picItem As PictureBox
     Friend WithEvents pnlOrder As Panel
     Friend WithEvents btnRemove As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Item As DataGridViewTextBoxColumn
+    Friend WithEvents QTY As DataGridViewTextBoxColumn
+    Friend WithEvents Price As DataGridViewTextBoxColumn
 End Class

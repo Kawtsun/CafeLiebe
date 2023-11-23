@@ -35,4 +35,8 @@
         frmPaymentMenu.Show()
         Me.Hide()
     End Sub
+    Public Sub AddDataToGrid(data1 As String, data2 As String, data3 As String)
+        DataGridView1.Rows.Add(data1, data2, data3)
+    End Sub
+
 End Class

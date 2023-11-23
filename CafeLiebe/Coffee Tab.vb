@@ -1,4 +1,9 @@
 ﻿Public Class frmCoffeeTab
+    Public Property nameCoffee As String
+    Public Property quantityCoffee As Integer
+    Public Property priceCoffee As Integer
+    Public Property totalAmount As Integer
+
     Dim qty1, qty2, qty3, qty4, qty5, qty6, qty7, qty8 As Integer
 
     Private Sub btnCQAdd01_Click(sender As Object, e As EventArgs) Handles btnCQAdd01.Click
@@ -110,6 +115,17 @@
         If qty8 > 0 Then
             qty8 = qty8 - 1
             lblCQuantity08.Text = qty8
+        End If
+    End Sub
+    Private Sub btnCBuy01_Click(sender As Object, e As EventArgs) Handles btnCBuy01.Click
+        nameCoffee = "Coffee 1"
+        quantityCoffee = lblCQuantity01.Text
+        priceCoffee = lblCPrice01.Text
+        totalAmount = quantityCoffee * priceCoffee
+        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+        If form1Instance IsNot Nothing Then
+            ' Add data to Form1's DataGridView
+            form1Instance.AddDataToGrid(nameCoffee, quantityCoffee, totalAmount)
         End If
     End Sub
 End Class
