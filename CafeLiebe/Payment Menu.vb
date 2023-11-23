@@ -1,4 +1,5 @@
 ﻿Public Class frmPaymentMenu
+    Dim index As Integer
     Private Sub DuplicateDataGridView()
         ' Get access to Form1 instance
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
@@ -38,5 +39,15 @@
 
     Private Sub frmPaymentMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DuplicateDataGridView()
+    End Sub
+
+    Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
+        If DataGridView2.SelectedRows.Count > 0 Then
+            For i As Integer = DataGridView2.SelectedRows.Count - 1 To 0 Step -1
+                DataGridView2.Rows.RemoveAt(DataGridView2.SelectedRows(i).Index)
+            Next
+        Else
+            MsgBox("No item selected!")
+        End If
     End Sub
 End Class
