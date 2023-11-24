@@ -248,8 +248,8 @@
             MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
         Else
             nameCoffee = lblCoffeeName08.Text
-            quantityCoffee = lblCQuantity02.Text
-            priceCoffee = lblCPrice02.Text
+            quantityCoffee = lblCQuantity08.Text
+            priceCoffee = lblCPrice08.Text
             totalAmountCoffee = quantityCoffee * priceCoffee
             sumTotalCoffee += totalAmountCoffee
             Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
