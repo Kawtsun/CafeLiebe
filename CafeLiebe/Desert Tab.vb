@@ -112,114 +112,148 @@
     End Sub
 
     Private Sub btnSBuy01_Click(sender As Object, e As EventArgs) Handles btnSBuy01.Click
-        nameDessert = lblSorbetName01.Text
-        quantityDessert = lblSQuantity01.Text
-        priceDessert = lblSPrice01.Text
-        totalAmountDessert = quantityDessert * priceDessert
-        sumTotalDesert += totalAmountDessert
-        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
-        If form1Instance IsNot Nothing Then
-            form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+        If qty1 = 0 Then
+            MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
+        Else
+            nameDessert = lblSorbetName01.Text
+            quantityDessert = lblSQuantity01.Text
+            priceDessert = lblSPrice01.Text
+            totalAmountDessert = quantityDessert * priceDessert
+            sumTotalDesert += totalAmountDessert
+            Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+            If form1Instance IsNot Nothing Then
+                form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+            End If
+            qty1 = 0
+            lblSQuantity01.Text = qty1
         End If
-        qty1 = 0
-        lblSQuantity01.Text = qty1
     End Sub
 
     Private Sub btnSBuy02_Click(sender As Object, e As EventArgs) Handles btnSBuy02.Click
-        nameDessert = lblSorbetName02.Text
-        quantityDessert = lblSQuantity02.Text
-        priceDessert = lblSPrice02.Text
-        totalAmountDessert = quantityDessert * priceDessert
-        sumTotalDesert += totalAmountDessert
-        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
-        If form1Instance IsNot Nothing Then
-            form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+        If qty2 = 0 Then
+            MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
+        Else
+            nameDessert = lblSorbetName02.Text
+            quantityDessert = lblSQuantity02.Text
+            priceDessert = lblSPrice02.Text
+            totalAmountDessert = quantityDessert * priceDessert
+            sumTotalDesert += totalAmountDessert
+            Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+            If form1Instance IsNot Nothing Then
+                form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+            End If
+            qty2 = 0
+            lblSQuantity02.Text = qty2
         End If
-        qty2 = 0
-        lblSQuantity02.Text = qty2
     End Sub
 
     Private Sub btnSBuy03_Click(sender As Object, e As EventArgs) Handles btnSBuy03.Click
-        nameDessert = lblSorbetName03.Text
-        quantityDessert = lblSQuantity03.Text
-        priceDessert = lblSPrice03.Text
-        totalAmountDessert = quantityDessert * priceDessert
-        sumTotalDesert += totalAmountDessert
-        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
-        If form1Instance IsNot Nothing Then
-            form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+        If qty3 = 0 Then
+            MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
+        Else
+            nameDessert = lblSorbetName03.Text
+            quantityDessert = lblSQuantity03.Text
+            priceDessert = lblSPrice03.Text
+            totalAmountDessert = quantityDessert * priceDessert
+            sumTotalDesert += totalAmountDessert
+            Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+            If form1Instance IsNot Nothing Then
+                form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+            End If
+            qty3 = 0
+            lblSQuantity03.Text = qty3
         End If
-        qty3 = 0
-        lblSQuantity03.Text = qty3
+
     End Sub
 
     Private Sub btnSBuy04_Click(sender As Object, e As EventArgs) Handles btnSBuy04.Click
-        nameDessert = lblSorbetName04.Text
-        quantityDessert = lblSQuantity04.Text
-        priceDessert = lblSPrice04.Text
-        totalAmountDessert = quantityDessert * priceDessert
-        sumTotalDesert += totalAmountDessert
-        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
-        If form1Instance IsNot Nothing Then
-            form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+        If qty4 = 0 Then
+            MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
+        Else
+            nameDessert = lblSorbetName04.Text
+            quantityDessert = lblSQuantity04.Text
+            priceDessert = lblSPrice04.Text
+            totalAmountDessert = quantityDessert * priceDessert
+            sumTotalDesert += totalAmountDessert
+            Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+            If form1Instance IsNot Nothing Then
+                form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+            End If
+            qty4 = 0
+            lblSQuantity04.Text = qty4
         End If
-        qty4 = 0
-        lblSQuantity04.Text = qty4
+
     End Sub
 
     Private Sub btnSBuy05_Click(sender As Object, e As EventArgs) Handles btnSBuy05.Click
-        nameDessert = lblSorbetName05.Text
-        quantityDessert = lblSQuantity05.Text
-        priceDessert = lblSPrice05.Text
-        totalAmountDessert = quantityDessert * priceDessert
-        sumTotalDesert += totalAmountDessert
-        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
-        If form1Instance IsNot Nothing Then
-            form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+        If qty5 = 0 Then
+            MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
+        Else
+            nameDessert = lblSorbetName05.Text
+            quantityDessert = lblSQuantity05.Text
+            priceDessert = lblSPrice05.Text
+            totalAmountDessert = quantityDessert * priceDessert
+            sumTotalDesert += totalAmountDessert
+            Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+            If form1Instance IsNot Nothing Then
+                form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+            End If
+            qty5 = 0
+            lblSQuantity05.Text = qty5
         End If
-        qty5 = 0
-        lblSQuantity05.Text = qty5
     End Sub
 
     Private Sub btnSBuy06_Click(sender As Object, e As EventArgs) Handles btnSBuy06.Click
-        nameDessert = lblSorbetName06.Text
-        quantityDessert = lblSQuantity06.Text
-        priceDessert = lblSPrice06.Text
-        totalAmountDessert = quantityDessert * priceDessert
-        sumTotalDesert += totalAmountDessert
-        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
-        If form1Instance IsNot Nothing Then
-            form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+        If qty6 = 0 Then
+            MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
+        Else
+            nameDessert = lblSorbetName06.Text
+            quantityDessert = lblSQuantity06.Text
+            priceDessert = lblSPrice06.Text
+            totalAmountDessert = quantityDessert * priceDessert
+            sumTotalDesert += totalAmountDessert
+            Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+            If form1Instance IsNot Nothing Then
+                form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+            End If
+            qty6 = 0
+            lblSQuantity06.Text = qty6
         End If
-        qty6 = 0
-        lblSQuantity06.Text = qty6
     End Sub
 
     Private Sub btnSBuy07_Click(sender As Object, e As EventArgs) Handles btnSBuy07.Click
-        nameDessert = lblSorbetName07.Text
-        quantityDessert = lblSQuantity07.Text
-        priceDessert = lblSPrice07.Text
-        totalAmountDessert = quantityDessert * priceDessert
-        sumTotalDesert += totalAmountDessert
-        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
-        If form1Instance IsNot Nothing Then
-            form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+        If qty7 = 0 Then
+            MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
+        Else
+            nameDessert = lblSorbetName07.Text
+            quantityDessert = lblSQuantity07.Text
+            priceDessert = lblSPrice07.Text
+            totalAmountDessert = quantityDessert * priceDessert
+            sumTotalDesert += totalAmountDessert
+            Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+            If form1Instance IsNot Nothing Then
+                form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+            End If
+            qty7 = 0
+            lblSQuantity07.Text = qty7
         End If
-        qty7 = 0
-        lblSQuantity07.Text = qty7
     End Sub
 
     Private Sub btnSBuy08_Click(sender As Object, e As EventArgs) Handles btnSBuy08.Click
-        nameDessert = lblSorbetName08.Text
-        quantityDessert = lblSQuantity08.Text
-        priceDessert = lblSPrice08.Text
-        totalAmountDessert = quantityDessert * priceDessert
-        sumTotalDesert += totalAmountDessert
-        Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
-        If form1Instance IsNot Nothing Then
-            form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+        If qty8 = 0 Then
+            MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
+        Else
+            nameDessert = lblSorbetName08.Text
+            quantityDessert = lblSQuantity08.Text
+            priceDessert = lblSPrice08.Text
+            totalAmountDessert = quantityDessert * priceDessert
+            sumTotalDesert += totalAmountDessert
+            Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
+            If form1Instance IsNot Nothing Then
+                form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
+            End If
+            qty8 = 0
+            lblSQuantity08.Text = qty8
         End If
-        qty8 = 0
-        lblSQuantity08.Text = qty8
     End Sub
 End Class
