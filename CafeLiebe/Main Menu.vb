@@ -1,6 +1,7 @@
 ﻿Public Class frmMainMenu
     Public Property totalofAll As Integer
     Dim index As Integer
+
     Private Sub frmMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnCoffee.PerformClick()
     End Sub

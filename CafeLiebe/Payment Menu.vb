@@ -106,4 +106,9 @@
     Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
 
     End Sub
+
+    Private Sub btnBaack_Click(sender As Object, e As EventArgs) Handles btnBaack.Click
+        frmMainMenu.Show()
+        Me.Hide()
+    End Sub
 End Class
