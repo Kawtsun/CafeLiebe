@@ -1,4 +1,5 @@
 ﻿Public Class frmPaymentMenu
+    Public Property recieverTotal As Integer
     Dim index As Integer
     Private Sub DuplicateDataGridView()
         ' Get access to Form1 instance
@@ -38,6 +39,9 @@
     End Sub
 
     Private Sub frmPaymentMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        recieverTotal = frmMainMenu.totalofAll
+        lblAmount.Text = recieverTotal
+        lblTotal.Text = recieverTotal
         DuplicateDataGridView()
     End Sub
 

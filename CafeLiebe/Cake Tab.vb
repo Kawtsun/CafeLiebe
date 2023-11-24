@@ -3,6 +3,8 @@
     Public Property quantityCake As Integer
     Public Property priceCake As Integer
     Public Property totalAmountCake As Integer
+    Public Property sumTotalCake As Integer
+
     Dim qty1, qty2, qty3, qty4, qty5, qty6, qty7, qty8 As Integer
 
     Private Sub btnCaQAdd01_Click(sender As Object, e As EventArgs) Handles btnCaQAdd01.Click
@@ -115,6 +117,7 @@
         quantityCake = lblCaQuantity01.Text
         priceCake = lblCaPrice01.Text
         totalAmountCake = quantityCake * priceCake
+        sumTotalCake += totalAmountCake
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCake, quantityCake, totalAmountCake)
@@ -128,6 +131,7 @@
         quantityCake = lblCaQuantity02.Text
         priceCake = lblCaPrice02.Text
         totalAmountCake = quantityCake * priceCake
+        sumTotalCake += totalAmountCake
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCake, quantityCake, totalAmountCake)
@@ -141,6 +145,7 @@
         quantityCake = lblCaQuantity03.Text
         priceCake = lblCaPrice03.Text
         totalAmountCake = quantityCake * priceCake
+        sumTotalCake += totalAmountCake
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCake, quantityCake, totalAmountCake)
@@ -154,6 +159,7 @@
         quantityCake = lblCaQuantity04.Text
         priceCake = lblCaPrice04.Text
         totalAmountCake = quantityCake * priceCake
+        sumTotalCake += totalAmountCake
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCake, quantityCake, totalAmountCake)
@@ -167,6 +173,7 @@
         quantityCake = lblCaQuantity05.Text
         priceCake = lblCaPrice05.Text
         totalAmountCake = quantityCake * priceCake
+        sumTotalCake += totalAmountCake
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCake, quantityCake, totalAmountCake)
@@ -180,6 +187,7 @@
         quantityCake = lblCaQuantity06.Text
         priceCake = lblCaPrice06.Text
         totalAmountCake = quantityCake * priceCake
+        sumTotalCake += totalAmountCake
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCake, quantityCake, totalAmountCake)
@@ -193,6 +201,7 @@
         quantityCake = lblCaQuantity07.Text
         priceCake = lblCaPrice07.Text
         totalAmountCake = quantityCake * priceCake
+        sumTotalCake += totalAmountCake
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCake, quantityCake, totalAmountCake)
@@ -206,6 +215,7 @@
         quantityCake = lblCaQuantity08.Text
         priceCake = lblCaPrice08.Text
         totalAmountCake = quantityCake * priceCake
+        sumTotalCake += totalAmountCake
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCake, quantityCake, totalAmountCake)

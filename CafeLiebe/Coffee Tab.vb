@@ -3,6 +3,7 @@
     Public Property quantityCoffee As Integer
     Public Property priceCoffee As Integer
     Public Property totalAmountCoffee As Integer
+    Public Property sumTotalCoffee As Integer
     Dim qty1, qty2, qty3, qty4, qty5, qty6, qty7, qty8 As Integer
 
     Private Sub btnCQAdd01_Click(sender As Object, e As EventArgs) Handles btnCQAdd01.Click
@@ -121,6 +122,7 @@
         quantityCoffee = lblCQuantity01.Text
         priceCoffee = lblCPrice01.Text
         totalAmountCoffee = quantityCoffee * priceCoffee
+        sumTotalCoffee += totalAmountCoffee
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCoffee, quantityCoffee, totalAmountCoffee)
@@ -134,6 +136,7 @@
         quantityCoffee = lblCQuantity02.Text
         priceCoffee = lblCPrice02.Text
         totalAmountCoffee = quantityCoffee * priceCoffee
+        sumTotalCoffee += totalAmountCoffee
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCoffee, quantityCoffee, totalAmountCoffee)
@@ -147,6 +150,7 @@
         quantityCoffee = lblCQuantity03.Text
         priceCoffee = lblCPrice03.Text
         totalAmountCoffee = quantityCoffee * priceCoffee
+        sumTotalCoffee += totalAmountCoffee
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCoffee, quantityCoffee, totalAmountCoffee)
@@ -160,6 +164,7 @@
         quantityCoffee = lblCQuantity04.Text
         priceCoffee = lblCPrice04.Text
         totalAmountCoffee = quantityCoffee * priceCoffee
+        sumTotalCoffee += totalAmountCoffee
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCoffee, quantityCoffee, totalAmountCoffee)
@@ -173,6 +178,7 @@
         quantityCoffee = lblCQuantity05.Text
         priceCoffee = lblCPrice05.Text
         totalAmountCoffee = quantityCoffee * priceCoffee
+        sumTotalCoffee += totalAmountCoffee
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCoffee, quantityCoffee, totalAmountCoffee)
@@ -186,6 +192,7 @@
         quantityCoffee = lblCQuantity06.Text
         priceCoffee = lblCPrice06.Text
         totalAmountCoffee = quantityCoffee * priceCoffee
+        sumTotalCoffee += totalAmountCoffee
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCoffee, quantityCoffee, totalAmountCoffee)
@@ -199,6 +206,7 @@
         quantityCoffee = lblCQuantity07.Text
         priceCoffee = lblCPrice07.Text
         totalAmountCoffee = quantityCoffee * priceCoffee
+        sumTotalCoffee += totalAmountCoffee
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCoffee, quantityCoffee, totalAmountCoffee)
@@ -212,6 +220,7 @@
         quantityCoffee = lblCQuantity02.Text
         priceCoffee = lblCPrice02.Text
         totalAmountCoffee = quantityCoffee * priceCoffee
+        sumTotalCoffee += totalAmountCoffee
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameCoffee, quantityCoffee, totalAmountCoffee)

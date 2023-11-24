@@ -1,4 +1,5 @@
 ﻿Public Class frmMainMenu
+    Public Property totalofAll As Integer
     Dim index As Integer
     Private Sub frmMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnCoffee.PerformClick()
@@ -53,6 +54,7 @@
         btnSorbet.BackColor = System.Drawing.Color.White
     End Sub
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+        totalofAll += frmCoffeeTab.sumTotalCoffee + frmCakeTab.sumTotalCake + frmDesertTab.sumTotalDesert
         frmPaymentMenu.Show()
         Me.Hide()
     End Sub
