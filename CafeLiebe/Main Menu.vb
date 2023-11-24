@@ -65,15 +65,17 @@
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-        'Select item (row) then click button to remove from Grid
-        If DataGridView1.SelectedRows.Count > 0 Then
-            For i As Integer = DataGridView1.SelectedRows.Count - 1 To 0 Step -1
-                DataGridView1.Rows.RemoveAt(DataGridView1.SelectedRows(i).Index)
-            Next
-        Else
-            MsgBox("No item selected!")
+        If DataGridView1.CurrentCell IsNot Nothing Then
+            Dim selectedRow As DataGridViewRow = DataGridView1.CurrentCell.OwningRow
+            Try
+                DataGridView1.Rows.Remove(selectedRow)
+            Catch ex As System.InvalidOperationException
+                MsgBox("No item selected!")
+            End Try
         End If
     End Sub
 
-
+    Private Sub btnCancelAll_Click(sender As Object, e As EventArgs) Handles btnCancelAll.Click
+        DataGridView1.Rows.Clear()
+    End Sub
 End Class

@@ -47,12 +47,13 @@
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-        If DataGridView2.SelectedRows.Count > 0 Then
-            For i As Integer = DataGridView2.SelectedRows.Count - 1 To 0 Step -1
-                DataGridView2.Rows.RemoveAt(DataGridView2.SelectedRows(i).Index)
-            Next
-        Else
-            MsgBox("No item selected!")
+        If DataGridView2.CurrentCell IsNot Nothing Then
+            Dim selectedRow As DataGridViewRow = DataGridView2.CurrentCell.OwningRow
+            Try
+                DataGridView2.Rows.Remove(selectedRow)
+            Catch ex As System.InvalidOperationException
+                MsgBox("No item selected!")
+            End Try
         End If
     End Sub
 
@@ -117,7 +118,7 @@
         End If
     End Sub
 
-    Private Sub frmPaymentMenu_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+    Private Sub frmPaymentMenu_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         DataGridView2.Rows.Clear()
         DuplicateDataGridView()
         recieverTotal = frmMainMenu.totalofAll
