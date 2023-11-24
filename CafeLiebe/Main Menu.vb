@@ -70,7 +70,7 @@
             Try
                 DataGridView1.Rows.Remove(selectedRow)
             Catch ex As System.InvalidOperationException
-                MsgBox("No item selected!")
+                MsgBox("No item selected!", vbOKOnly + vbExclamation, "No Item")
             End Try
         End If
     End Sub
