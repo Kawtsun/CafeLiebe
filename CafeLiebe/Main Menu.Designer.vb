@@ -22,7 +22,7 @@ Partial Class frmMainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMainMenu))
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(frmMainMenu))
         pnlTop = New Panel()
         lblTap = New Label()
         btnBack = New Button()
@@ -306,7 +306,6 @@ Partial Class frmMainMenu
         pnlList.ResumeLayout(False)
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
-
     End Sub
 
     Friend WithEvents pnlTop As Panel

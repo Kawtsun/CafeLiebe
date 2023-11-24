@@ -1,6 +1,7 @@
 ﻿Public Class frmPaymentMenu
     Public Property recieverTotal As Integer
-    Dim index As Integer
+    Dim index, change As Integer
+
     Private Sub DuplicateDataGridView()
         ' Get access to Form1 instance
         Dim form1Instance As frmMainMenu = CType(Application.OpenForms("frmMainMenu"), frmMainMenu)
@@ -110,5 +111,17 @@
     Private Sub btnBaack_Click(sender As Object, e As EventArgs) Handles btnBaack.Click
         frmMainMenu.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub txtTendered_TextChanged(sender As Object, e As EventArgs) Handles txtTendered.TextChanged
+        change = Val(txtTendered.Text) - Val(lblAmount.Text)
+
+        If change >= 0 Then
+            lblChange.Text = change
+        ElseIf txtTendered.Text = "" Then
+            lblChange.Text = "00.00"
+        Else
+            lblChange.Text = "00.00"
+        End If
     End Sub
 End Class
