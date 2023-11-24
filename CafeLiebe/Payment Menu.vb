@@ -40,10 +40,10 @@
     End Sub
 
     Private Sub frmPaymentMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DuplicateDataGridView()
         recieverTotal = frmMainMenu.totalofAll
         lblAmount.Text = recieverTotal
         lblTotal.Text = recieverTotal
-        DuplicateDataGridView()
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
@@ -100,14 +100,6 @@
         txtTendered.Text = Val(txtTendered.Text) + 1000
     End Sub
 
-    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
-
-    End Sub
-
-    Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
-
-    End Sub
-
     Private Sub btnBaack_Click(sender As Object, e As EventArgs) Handles btnBaack.Click
         frmMainMenu.Show()
         Me.Hide()
@@ -123,5 +115,13 @@
         Else
             lblChange.Text = "00.00"
         End If
+    End Sub
+
+    Private Sub frmPaymentMenu_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        DataGridView2.Rows.Clear()
+        DuplicateDataGridView()
+        recieverTotal = frmMainMenu.totalofAll
+        lblAmount.Text = recieverTotal
+        lblTotal.Text = recieverTotal
     End Sub
 End Class

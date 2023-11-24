@@ -1,5 +1,6 @@
 ﻿Public Class frmMainMenu
     Public Property totalofAll As Integer
+    Dim dt As New DataTable
     Dim index As Integer
 
     Private Sub frmMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -73,4 +74,6 @@
             MsgBox("No item selected!")
         End If
     End Sub
+
+
 End Class

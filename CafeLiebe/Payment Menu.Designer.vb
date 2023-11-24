@@ -28,6 +28,7 @@ Partial Class frmPaymentMenu
         btnBack = New Button()
         picStartTop = New PictureBox()
         pnlLeft = New Panel()
+        btnRefresh = New Button()
         pnlBottom = New Panel()
         lblTotal = New Label()
         lblEwan1 = New Label()
@@ -135,6 +136,7 @@ Partial Class frmPaymentMenu
         ' pnlLeft
         ' 
         pnlLeft.BackColor = Color.FromArgb(CByte(234), CByte(225), CByte(210))
+        pnlLeft.Controls.Add(btnRefresh)
         pnlLeft.Controls.Add(pnlBottom)
         pnlLeft.Controls.Add(lblItems)
         pnlLeft.Controls.Add(pnlList)
@@ -143,6 +145,21 @@ Partial Class frmPaymentMenu
         pnlLeft.Name = "pnlLeft"
         pnlLeft.Size = New Size(455, 521)
         pnlLeft.TabIndex = 3
+        ' 
+        ' btnRefresh
+        ' 
+        btnRefresh.BackColor = Color.FromArgb(CByte(254), CByte(245), CByte(230))
+        btnRefresh.FlatAppearance.BorderColor = Color.White
+        btnRefresh.FlatAppearance.BorderSize = 0
+        btnRefresh.FlatStyle = FlatStyle.Flat
+        btnRefresh.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        btnRefresh.ForeColor = Color.FromArgb(CByte(107), CByte(112), CByte(80))
+        btnRefresh.Location = New Point(319, 3)
+        btnRefresh.Name = "btnRefresh"
+        btnRefresh.Size = New Size(114, 27)
+        btnRefresh.TabIndex = 243
+        btnRefresh.Text = "Refresh"
+        btnRefresh.UseVisualStyleBackColor = False
         ' 
         ' pnlBottom
         ' 
@@ -796,4 +813,5 @@ Partial Class frmPaymentMenu
     Friend WithEvents lblDine As Label
     Friend WithEvents lblTake As Label
     Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents btnRefresh As Button
 End Class
