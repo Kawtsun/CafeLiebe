@@ -111,7 +111,7 @@
     End Sub
 
     Private Sub btnSBuy01_Click(sender As Object, e As EventArgs) Handles btnSBuy01.Click
-        nameDessert = "Dessert 1"
+        nameDessert = lblSorbetName01.Text
         quantityDessert = lblSQuantity01.Text
         priceDessert = lblSPrice01.Text
         totalAmountDessert = quantityDessert * priceDessert
@@ -119,10 +119,12 @@
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
         End If
+        qty1 = 0
+        lblSQuantity01.Text = qty1
     End Sub
 
     Private Sub btnSBuy02_Click(sender As Object, e As EventArgs) Handles btnSBuy02.Click
-        nameDessert = "Dessert 2"
+        nameDessert = lblSorbetName02.Text
         quantityDessert = lblSQuantity02.Text
         priceDessert = lblSPrice02.Text
         totalAmountDessert = quantityDessert * priceDessert
@@ -130,10 +132,12 @@
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
         End If
+        qty2 = 0
+        lblSQuantity02.Text = qty2
     End Sub
 
     Private Sub btnSBuy03_Click(sender As Object, e As EventArgs) Handles btnSBuy03.Click
-        nameDessert = "Dessert 3"
+        nameDessert = lblSorbetName03.Text
         quantityDessert = lblSQuantity03.Text
         priceDessert = lblSPrice03.Text
         totalAmountDessert = quantityDessert * priceDessert
@@ -141,10 +145,12 @@
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
         End If
+        qty3 = 0
+        lblSQuantity03.Text = qty3
     End Sub
 
     Private Sub btnSBuy04_Click(sender As Object, e As EventArgs) Handles btnSBuy04.Click
-        nameDessert = "Dessert 4"
+        nameDessert = lblSorbetName04.Text
         quantityDessert = lblSQuantity04.Text
         priceDessert = lblSPrice04.Text
         totalAmountDessert = quantityDessert * priceDessert
@@ -152,10 +158,12 @@
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
         End If
+        qty4 = 0
+        lblSQuantity04.Text = qty4
     End Sub
 
     Private Sub btnSBuy05_Click(sender As Object, e As EventArgs) Handles btnSBuy05.Click
-        nameDessert = "Dessert 5"
+        nameDessert = lblSorbetName05.Text
         quantityDessert = lblSQuantity05.Text
         priceDessert = lblSPrice05.Text
         totalAmountDessert = quantityDessert * priceDessert
@@ -163,10 +171,12 @@
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
         End If
+        qty5 = 0
+        lblSQuantity05.Text = qty5
     End Sub
 
     Private Sub btnSBuy06_Click(sender As Object, e As EventArgs) Handles btnSBuy06.Click
-        nameDessert = "Dessert 6"
+        nameDessert = lblSorbetName06.Text
         quantityDessert = lblSQuantity06.Text
         priceDessert = lblSPrice06.Text
         totalAmountDessert = quantityDessert * priceDessert
@@ -174,10 +184,12 @@
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
         End If
+        qty6 = 0
+        lblSQuantity06.Text = qty6
     End Sub
 
     Private Sub btnSBuy07_Click(sender As Object, e As EventArgs) Handles btnSBuy07.Click
-        nameDessert = "Dessert 7"
+        nameDessert = lblSorbetName07.Text
         quantityDessert = lblSQuantity07.Text
         priceDessert = lblSPrice07.Text
         totalAmountDessert = quantityDessert * priceDessert
@@ -185,10 +197,12 @@
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
         End If
+        qty7 = 0
+        lblSQuantity07.Text = qty7
     End Sub
 
     Private Sub btnSBuy08_Click(sender As Object, e As EventArgs) Handles btnSBuy08.Click
-        nameDessert = "Dessert 8"
+        nameDessert = lblSorbetName08.Text
         quantityDessert = lblSQuantity08.Text
         priceDessert = lblSPrice08.Text
         totalAmountDessert = quantityDessert * priceDessert
@@ -196,5 +210,7 @@
         If form1Instance IsNot Nothing Then
             form1Instance.AddDataToGrid(nameDessert, quantityDessert, totalAmountDessert)
         End If
+        qty8 = 0
+        lblSQuantity08.Text = qty8
     End Sub
 End Class
