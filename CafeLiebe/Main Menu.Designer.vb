@@ -22,6 +22,7 @@ Partial Class frmMainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMainMenu))
         pnlTop = New Panel()
         lblTap = New Label()
         btnBack = New Button()
@@ -34,13 +35,13 @@ Partial Class frmMainMenu
         lblItems = New Label()
         pnlList = New Panel()
         DataGridView1 = New DataGridView()
+        Item = New DataGridViewTextBoxColumn()
+        QTY = New DataGridViewTextBoxColumn()
+        Price = New DataGridViewTextBoxColumn()
         btnSorbet = New Button()
         btnCake = New Button()
         btnCoffee = New Button()
         pnlOrder = New Panel()
-        Item = New DataGridViewTextBoxColumn()
-        QTY = New DataGridViewTextBoxColumn()
-        Price = New DataGridViewTextBoxColumn()
         pnlTop.SuspendLayout()
         CType(picStartTop, ComponentModel.ISupportInitialize).BeginInit()
         pnlLeft.SuspendLayout()
@@ -207,6 +208,27 @@ Partial Class frmMainMenu
         DataGridView1.Size = New Size(250, 278)
         DataGridView1.TabIndex = 4
         ' 
+        ' Item
+        ' 
+        Item.HeaderText = "Item"
+        Item.Name = "Item"
+        Item.ReadOnly = True
+        Item.Width = 135
+        ' 
+        ' QTY
+        ' 
+        QTY.HeaderText = "QTY"
+        QTY.Name = "QTY"
+        QTY.ReadOnly = True
+        QTY.Width = 30
+        ' 
+        ' Price
+        ' 
+        Price.HeaderText = "Price"
+        Price.Name = "Price"
+        Price.ReadOnly = True
+        Price.Width = 42
+        ' 
         ' btnSorbet
         ' 
         btnSorbet.BackColor = Color.FromArgb(CByte(234), CByte(225), CByte(210))
@@ -262,27 +284,6 @@ Partial Class frmMainMenu
         pnlOrder.Size = New Size(647, 521)
         pnlOrder.TabIndex = 3
         ' 
-        ' Item
-        ' 
-        Item.HeaderText = "Item"
-        Item.Name = "Item"
-        Item.ReadOnly = True
-        Item.Width = 135
-        ' 
-        ' QTY
-        ' 
-        QTY.HeaderText = "QTY"
-        QTY.Name = "QTY"
-        QTY.ReadOnly = True
-        QTY.Width = 30
-        ' 
-        ' Price
-        ' 
-        Price.HeaderText = "Price"
-        Price.Name = "Price"
-        Price.ReadOnly = True
-        Price.Width = 42
-        ' 
         ' frmMainMenu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -292,9 +293,10 @@ Partial Class frmMainMenu
         Controls.Add(pnlLeft)
         Controls.Add(pnlTop)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frmMainMenu"
         StartPosition = FormStartPosition.CenterScreen
-        Text = " "
+        Text = "Cafe Liebe"
         pnlTop.ResumeLayout(False)
         pnlTop.PerformLayout()
         CType(picStartTop, ComponentModel.ISupportInitialize).EndInit()

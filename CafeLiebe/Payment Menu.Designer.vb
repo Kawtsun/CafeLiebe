@@ -22,6 +22,7 @@ Partial Class frmPaymentMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPaymentMenu))
         pnlTop = New Panel()
         lblTap = New Label()
         btnBack = New Button()
@@ -725,9 +726,10 @@ Partial Class frmPaymentMenu
         Controls.Add(pnlLeft)
         Controls.Add(pnlTop)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frmPaymentMenu"
         StartPosition = FormStartPosition.CenterScreen
-        Text = " "
+        Text = "Cafe Liebe"
         pnlTop.ResumeLayout(False)
         pnlTop.PerformLayout()
         CType(picStartTop, ComponentModel.ISupportInitialize).EndInit()

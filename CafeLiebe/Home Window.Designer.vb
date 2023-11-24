@@ -22,6 +22,7 @@ Partial Class frmHomeWindow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHomeWindow))
         pnlTop = New Panel()
         lblEhhh = New Label()
         btnExit = New Button()
@@ -143,9 +144,10 @@ Partial Class frmHomeWindow
         Controls.Add(pnlTop)
         Controls.Add(btnContinue)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frmHomeWindow"
         StartPosition = FormStartPosition.CenterScreen
-        Text = " "
+        Text = "Cafe Liebe"
         pnlTop.ResumeLayout(False)
         pnlTop.PerformLayout()
         CType(picStartTop, ComponentModel.ISupportInitialize).EndInit()
