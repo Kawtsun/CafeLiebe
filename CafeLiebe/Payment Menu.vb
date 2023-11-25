@@ -1,6 +1,5 @@
 ﻿Public Class frmPaymentMenu
     Public Property recieverTotal As Integer
-    Public Property totalofAll As Integer
     Dim index, change As Integer
 
     Private Sub DuplicateDataGridView()
@@ -47,6 +46,7 @@
 
     Private Sub frmPaymentMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DuplicateDataGridView()
+        recieverTotal = 0
         recieverTotal = frmMainMenu.totalofAll
         lblAmount.Text = recieverTotal
         lblTotal.Text = recieverTotal
@@ -127,8 +127,7 @@
     Private Sub frmPaymentMenu_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         DataGridView2.Rows.Clear()
         DuplicateDataGridView()
-        recieverTotal = frmMainMenu.totalofAll
-        lblAmount.Text = recieverTotal
-        lblTotal.Text = recieverTotal
+        lblAmount.Text = frmMainMenu.totalofAll.ToString
+        lblTotal.Text = frmMainMenu.totalofAll.ToString
     End Sub
 End Class

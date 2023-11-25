@@ -1,6 +1,5 @@
 ﻿Public Class frmMainMenu
     Public Property totalofAll As Integer
-    Public Property recieverTotal As Integer
     Dim index As Integer
 
     Private Sub DuplicateDataGridView()
@@ -81,6 +80,7 @@
         btnSorbet.BackColor = System.Drawing.Color.White
     End Sub
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+        totalofAll = 0
         totalofAll += frmCoffeeTab.sumTotalCoffee + frmCakeTab.sumTotalCake + frmDesertTab.sumTotalDesert
         frmPaymentMenu.Show()
         Me.Hide()
@@ -107,6 +107,5 @@
     Private Sub frmMainMenu_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         DataGridView1.Rows.Clear()
         DuplicateDataGridView()
-        recieverTotal = frmPaymentMenu.totalofAll
     End Sub
 End Class
