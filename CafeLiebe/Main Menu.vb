@@ -2,7 +2,7 @@
     Public Property totalofAll As Integer
     Dim index As Integer
 
-    Private Sub DuplicateDataGridView()
+    Public Sub DuplicateDataGridView()
         ' Get access to Form1 instance
         Dim form2Instance As frmPaymentMenu = CType(Application.OpenForms("frmPaymentMenu"), frmPaymentMenu)
 

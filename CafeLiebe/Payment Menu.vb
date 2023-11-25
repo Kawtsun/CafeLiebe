@@ -66,6 +66,7 @@
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
+        frmMainMenu.DataGridView1.Rows.Clear()
         If DataGridView2.CurrentCell IsNot Nothing Then
             Dim selectedRow As DataGridViewRow = DataGridView2.CurrentCell.OwningRow
             Try
