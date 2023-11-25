@@ -1,5 +1,6 @@
 ﻿Public Class frmPaymentMenu
     Public Property recieverTotal As Integer
+    Public Property totalofAll As Integer
     Dim index, change As Integer
 
     Private Sub DuplicateDataGridView()
@@ -29,6 +30,11 @@
         DataGridView2.Columns(1).Width = 50
         DataGridView2.Columns(2).Width = 74
     End Sub
+
+    Public Function GetDataGridView() As DataGridView
+        Return DataGridView2
+    End Function
+
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         frmMainMenu.Show()
         Me.Hide()

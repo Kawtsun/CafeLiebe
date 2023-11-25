@@ -32,7 +32,9 @@ Partial Class frmPaymentMenu
         lblTotal = New Label()
         lblEwan1 = New Label()
         btnRemove = New Button()
+        btnConfirm = New Button()
         picItem = New PictureBox()
+        btnCancelAll = New Button()
         lblItems = New Label()
         pnlList = New Panel()
         DataGridView2 = New DataGridView()
@@ -68,9 +70,6 @@ Partial Class frmPaymentMenu
         lblMessage3 = New Label()
         lblEwan2 = New Label()
         lblDineTake = New Label()
-        btnConfirm = New Button()
-        btnCancelAll = New Button()
-        Label1 = New Label()
         pnlTop.SuspendLayout()
         CType(picStartTop, ComponentModel.ISupportInitialize).BeginInit()
         pnlLeft.SuspendLayout()
@@ -198,6 +197,21 @@ Partial Class frmPaymentMenu
         btnRemove.Text = "Remove an Item..."
         btnRemove.UseVisualStyleBackColor = False
         ' 
+        ' btnConfirm
+        ' 
+        btnConfirm.BackColor = Color.FromArgb(CByte(234), CByte(225), CByte(210))
+        btnConfirm.FlatAppearance.BorderColor = Color.White
+        btnConfirm.FlatAppearance.BorderSize = 0
+        btnConfirm.FlatStyle = FlatStyle.Flat
+        btnConfirm.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        btnConfirm.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
+        btnConfirm.Location = New Point(340, 11)
+        btnConfirm.Name = "btnConfirm"
+        btnConfirm.Size = New Size(96, 43)
+        btnConfirm.TabIndex = 5
+        btnConfirm.Text = "Confirm"
+        btnConfirm.UseVisualStyleBackColor = False
+        ' 
         ' picItem
         ' 
         picItem.BackColor = Color.FromArgb(CByte(254), CByte(245), CByte(230))
@@ -208,6 +222,21 @@ Partial Class frmPaymentMenu
         picItem.SizeMode = PictureBoxSizeMode.Zoom
         picItem.TabIndex = 4
         picItem.TabStop = False
+        ' 
+        ' btnCancelAll
+        ' 
+        btnCancelAll.BackColor = Color.FromArgb(CByte(234), CByte(225), CByte(210))
+        btnCancelAll.FlatAppearance.BorderColor = Color.White
+        btnCancelAll.FlatAppearance.BorderSize = 0
+        btnCancelAll.FlatStyle = FlatStyle.Flat
+        btnCancelAll.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        btnCancelAll.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
+        btnCancelAll.Location = New Point(229, 11)
+        btnCancelAll.Name = "btnCancelAll"
+        btnCancelAll.Size = New Size(96, 43)
+        btnCancelAll.TabIndex = 6
+        btnCancelAll.Text = "Cancel All"
+        btnCancelAll.UseVisualStyleBackColor = False
         ' 
         ' lblItems
         ' 
@@ -224,7 +253,6 @@ Partial Class frmPaymentMenu
         ' pnlList
         ' 
         pnlList.BackColor = Color.White
-        pnlList.Controls.Add(Label1)
         pnlList.Controls.Add(DataGridView2)
         pnlList.Location = New Point(19, 33)
         pnlList.Name = "pnlList"
@@ -687,48 +715,6 @@ Partial Class frmPaymentMenu
         lblDineTake.TabIndex = 233
         lblDineTake.Text = "Hello beloved customer!"
         ' 
-        ' btnConfirm
-        ' 
-        btnConfirm.BackColor = Color.FromArgb(CByte(234), CByte(225), CByte(210))
-        btnConfirm.FlatAppearance.BorderColor = Color.White
-        btnConfirm.FlatAppearance.BorderSize = 0
-        btnConfirm.FlatStyle = FlatStyle.Flat
-        btnConfirm.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
-        btnConfirm.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
-        btnConfirm.Location = New Point(340, 11)
-        btnConfirm.Name = "btnConfirm"
-        btnConfirm.Size = New Size(96, 43)
-        btnConfirm.TabIndex = 5
-        btnConfirm.Text = "Confirm"
-        btnConfirm.UseVisualStyleBackColor = False
-        ' 
-        ' btnCancelAll
-        ' 
-        btnCancelAll.BackColor = Color.FromArgb(CByte(234), CByte(225), CByte(210))
-        btnCancelAll.FlatAppearance.BorderColor = Color.White
-        btnCancelAll.FlatAppearance.BorderSize = 0
-        btnCancelAll.FlatStyle = FlatStyle.Flat
-        btnCancelAll.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
-        btnCancelAll.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
-        btnCancelAll.Location = New Point(229, 11)
-        btnCancelAll.Name = "btnCancelAll"
-        btnCancelAll.Size = New Size(96, 43)
-        btnCancelAll.TabIndex = 6
-        btnCancelAll.Text = "Cancel All"
-        btnCancelAll.UseVisualStyleBackColor = False
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.FromArgb(CByte(254), CByte(245), CByte(230))
-        Label1.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
-        Label1.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
-        Label1.Location = New Point(53, 381)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(297, 17)
-        Label1.TabIndex = 10
-        Label1.Text = "To modify order, go back to the ordering window"
-        ' 
         ' frmPaymentMenu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -753,7 +739,6 @@ Partial Class frmPaymentMenu
         pnlBottom.PerformLayout()
         CType(picItem, ComponentModel.ISupportInitialize).EndInit()
         pnlList.ResumeLayout(False)
-        pnlList.PerformLayout()
         CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
         pnlCalcu.ResumeLayout(False)
         pnlMiddle.ResumeLayout(False)
@@ -811,5 +796,4 @@ Partial Class frmPaymentMenu
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents btnConfirm As Button
     Friend WithEvents btnCancelAll As Button
-    Friend WithEvents Label1 As Label
 End Class

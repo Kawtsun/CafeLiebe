@@ -1,7 +1,32 @@
 ﻿Public Class frmMainMenu
     Public Property totalofAll As Integer
-    Dim dt As New DataTable
+    Public Property recieverTotal As Integer
     Dim index As Integer
+
+    Private Sub DuplicateDataGridView()
+        ' Get access to Form1 instance
+        Dim form2Instance As frmPaymentMenu = CType(Application.OpenForms("frmPaymentMenu"), frmPaymentMenu)
+
+        ' Check if Form1 instance exists
+        If form2Instance IsNot Nothing Then
+            ' Get the DataGridView from Form1
+            Dim dataGridViewFromForm2 As DataGridView = form2Instance.GetDataGridView()
+
+            ' Duplicate the columns
+            For Each column As DataGridViewColumn In dataGridViewFromForm2.Columns
+                DataGridView1.Columns.Add(DirectCast(column.Clone(), DataGridViewColumn))
+            Next
+
+            ' Duplicate the rows and their data
+            For Each row As DataGridViewRow In dataGridViewFromForm2.Rows
+                Dim newRow As DataGridViewRow = DirectCast(row.Clone(), DataGridViewRow)
+                For i As Integer = 0 To row.Cells.Count - 1
+                    newRow.Cells(i).Value = row.Cells(i).Value
+                Next
+                DataGridView1.Rows.Add(newRow)
+            Next
+        End If
+    End Sub
 
     Private Sub frmMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnCoffee.PerformClick()
@@ -77,5 +102,11 @@
 
     Private Sub btnCancelAll_Click(sender As Object, e As EventArgs) Handles btnCancelAll.Click
         DataGridView1.Rows.Clear()
+    End Sub
+
+    Private Sub frmMainMenu_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        DataGridView1.Rows.Clear()
+        DuplicateDataGridView()
+        recieverTotal = frmPaymentMenu.totalofAll
     End Sub
 End Class
