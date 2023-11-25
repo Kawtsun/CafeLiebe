@@ -1,6 +1,20 @@
 ﻿Public Class frmPaymentMenu
     Public Property recieverTotal As Integer
     Dim index, change As Integer
+    Dim total As Integer
+
+    Private Sub UpdateTotalAmount()
+        total = 0
+        For Each row As DataGridViewRow In DataGridView2.Rows
+            If Not row.IsNewRow Then
+                Dim cellValue As Object = row.Cells(2).Value
+                If cellValue IsNot Nothing AndAlso Not IsDBNull(cellValue) Then
+                    Dim value As Integer = Int32.Parse(Val(cellValue))
+                    total += value
+                End If
+            End If
+        Next
+    End Sub
 
     Private Sub DuplicateDataGridView()
         ' Get access to Form1 instance
@@ -46,7 +60,6 @@
 
     Private Sub frmPaymentMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DuplicateDataGridView()
-        recieverTotal = 0
         recieverTotal = frmMainMenu.totalofAll
         lblAmount.Text = recieverTotal
         lblTotal.Text = recieverTotal
@@ -61,10 +74,17 @@
                 MsgBox("No item selected!", vbOKOnly + vbExclamation, "No Item")
             End Try
         End If
+
+        UpdateTotalAmount()
+        lblAmount.Text = total
+        lblTotal.Text = total
     End Sub
 
     Private Sub btnCancelAll_Click(sender As Object, e As EventArgs) Handles btnCancelAll.Click
         DataGridView2.Rows.Clear()
+        UpdateTotalAmount()
+        lblAmount.Text = total
+        lblTotal.Text = total
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
