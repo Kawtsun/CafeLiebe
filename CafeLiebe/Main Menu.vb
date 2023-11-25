@@ -22,7 +22,7 @@
                 For i As Integer = 0 To row.Cells.Count - 1
                     newRow.Cells(i).Value = row.Cells(i).Value
                 Next
-                DataGridView1.Rows.Add(newRow)
+                'DataGridView1.Rows.Add(newRow)
             Next
         End If
     End Sub
@@ -92,6 +92,7 @@
             End If
         Next
         frmPaymentMenu.Show()
+        frmPaymentMenu.DataGridView2.Rows.RemoveAt(1)
         Me.Hide()
     End Sub
     Public Sub AddDataToGrid(data1 As String, data2 As String, data3 As String)
