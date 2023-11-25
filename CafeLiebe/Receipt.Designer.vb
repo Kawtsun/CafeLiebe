@@ -22,6 +22,7 @@ Partial Class frmReceipt
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmReceipt))
         DataGridView3 = New DataGridView()
         Panel1 = New Panel()
         Label1 = New Label()
@@ -252,9 +253,10 @@ Partial Class frmReceipt
         Controls.Add(lblAAHH)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frmReceipt"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Receipt"
+        Text = "Cafe Liebe"
         CType(DataGridView3, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
