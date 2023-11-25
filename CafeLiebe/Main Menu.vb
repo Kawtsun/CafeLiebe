@@ -86,7 +86,6 @@
         totalofAll = 0
         frmPaymentMenu.DataGridView2.Rows.Clear()
         frmPaymentMenu.DataGridView2.Columns.Clear()
-
         For Each row As DataGridViewRow In DataGridView1.Rows
             If Not row.IsNewRow Then
                 Dim cellValue As Object = row.Cells(2).Value

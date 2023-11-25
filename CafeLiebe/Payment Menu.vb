@@ -62,7 +62,6 @@
 
     Private Sub frmPaymentMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DataGridView2.Rows.Clear()
-        DuplicateDataGridView()
         UpdateTotalAmount()
         lblAmount.Text = total
         lblTotal.Text = total
