@@ -22,7 +22,7 @@
                 For i As Integer = 0 To row.Cells.Count - 1
                     newRow.Cells(i).Value = row.Cells(i).Value
                 Next
-                'DataGridView1.Rows.Add(newRow)
+                DataGridView1.Rows.Add(newRow)
             Next
         End If
         DataGridView1.Columns(0).Width = 135
