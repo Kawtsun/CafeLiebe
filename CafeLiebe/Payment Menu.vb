@@ -1,6 +1,7 @@
 ﻿Public Class frmPaymentMenu
     Public Property recieverTotal As Integer
     Public Property serviceType As String = ""
+    Public Property update As Boolean = True
     Dim index, change As Integer
     Dim total As Integer
 
@@ -156,6 +157,7 @@
         DuplicateDataGridView()
         UpdateTotalAmount()
         lblTotal.Text = total
+        update = False
 
     End Sub
 

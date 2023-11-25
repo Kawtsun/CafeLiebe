@@ -114,7 +114,6 @@
 
     Private Sub btnCaBuy01_Click(sender As Object, e As EventArgs) Handles btnCaBuy01.Click
         If qty1 = 0 Then
-            frmMainMenu.DataGridView1.Rows.Clear()
             MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
         Else
             nameCake = lblCakeName01.Text
@@ -133,7 +132,6 @@
 
     Private Sub btnCaBuy02_Click(sender As Object, e As EventArgs) Handles btnCaBuy02.Click
         If qty2 = 0 Then
-            frmMainMenu.DataGridView1.Rows.Clear()
             MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
         Else
             nameCake = lblCakeName02.Text
@@ -152,7 +150,6 @@
 
     Private Sub btnCaBuy03_Click(sender As Object, e As EventArgs) Handles btnCaBuy03.Click
         If qty3 = 0 Then
-            frmMainMenu.DataGridView1.Rows.Clear()
             MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
         Else
             nameCake = lblCakeName03.Text
@@ -171,7 +168,6 @@
 
     Private Sub btnCaBuy04_Click(sender As Object, e As EventArgs) Handles btnCaBuy04.Click
         If qty4 = 0 Then
-            frmMainMenu.DataGridView1.Rows.Clear()
             MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
         Else
             nameCake = lblCakeName04.Text
@@ -190,7 +186,6 @@
 
     Private Sub btnCaBuy05_Click(sender As Object, e As EventArgs) Handles btnCaBuy05.Click
         If qty5 = 0 Then
-            frmMainMenu.DataGridView1.Rows.Clear()
             MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
         Else
             nameCake = lblCakeName05.Text
@@ -209,7 +204,6 @@
 
     Private Sub btnCaBuy06_Click(sender As Object, e As EventArgs) Handles btnCaBuy06.Click
         If qty6 = 0 Then
-            frmMainMenu.DataGridView1.Rows.Clear()
             MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
         Else
             nameCake = lblCakeName06.Text
@@ -228,7 +222,6 @@
 
     Private Sub btnCaBuy07_Click(sender As Object, e As EventArgs) Handles btnCaBuy07.Click
         If qty7 = 0 Then
-            frmMainMenu.DataGridView1.Rows.Clear()
             MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
         Else
             nameCake = lblCakeName07.Text
@@ -247,7 +240,6 @@
 
     Private Sub btnCaBuy08_Click(sender As Object, e As EventArgs) Handles btnCaBuy08.Click
         If qty8 = 0 Then
-            frmMainMenu.DataGridView1.Rows.Clear()
             MsgBox("Please enter valid quantity!", vbOKOnly + vbCritical, "Null")
         Else
             nameCake = lblCakeName08.Text

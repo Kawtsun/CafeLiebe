@@ -26,7 +26,7 @@
                 DataGridView3.Rows.Add(newRow)
             Next
         End If
-        DataGridView3.Columns(0).Width = 176
+        DataGridView3.Columns(0).Width = 273
         DataGridView3.Columns(1).Width = 30
         DataGridView3.Columns(2).Width = 42
     End Sub

@@ -118,6 +118,10 @@
     End Sub
 
     Private Sub frmMainMenu_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
-        DuplicateDataGridView()
+        If frmPaymentMenu.update = False Then
+            DataGridView1.Rows.Clear()
+            DuplicateDataGridView()
+            frmPaymentMenu.update = True
+        End If
     End Sub
 End Class
