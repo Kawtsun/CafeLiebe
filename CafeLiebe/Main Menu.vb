@@ -114,7 +114,6 @@
     End Sub
 
     Private Sub frmMainMenu_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
-        DataGridView1.Rows.Clear()
         DuplicateDataGridView()
     End Sub
 End Class

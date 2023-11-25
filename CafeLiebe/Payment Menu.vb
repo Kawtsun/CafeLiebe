@@ -59,10 +59,11 @@
     End Sub
 
     Private Sub frmPaymentMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DataGridView2.Rows.Clear()
         DuplicateDataGridView()
-        recieverTotal = frmMainMenu.totalofAll
-        lblAmount.Text = recieverTotal
-        lblTotal.Text = recieverTotal
+        UpdateTotalAmount()
+        lblAmount.Text = total
+        lblTotal.Text = total
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
@@ -128,6 +129,7 @@
     End Sub
 
     Private Sub btnBaack_Click(sender As Object, e As EventArgs) Handles btnBaack.Click
+        frmMainMenu.DataGridView1.Rows.Clear()
         frmMainMenu.Show()
         Me.Hide()
     End Sub
@@ -147,7 +149,8 @@
     Private Sub frmPaymentMenu_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         DataGridView2.Rows.Clear()
         DuplicateDataGridView()
-        lblAmount.Text = frmMainMenu.totalofAll.ToString
-        lblTotal.Text = frmMainMenu.totalofAll.ToString
+        UpdateTotalAmount()
+        lblAmount.Text = total
+        lblTotal.Text = total
     End Sub
 End Class
