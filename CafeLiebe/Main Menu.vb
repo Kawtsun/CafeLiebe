@@ -118,5 +118,6 @@
     End Sub
 
     Private Sub frmMainMenu_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
+        DuplicateDataGridView()
     End Sub
 End Class
