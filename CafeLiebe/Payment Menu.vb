@@ -1,7 +1,7 @@
 ﻿Public Class frmPaymentMenu
     Public Property recieverTotal As Integer
     Public Property serviceType As String = ""
-    Public Property update As Boolean = True
+    Public Property paymentUpdate As Boolean = True
     Dim index, change As Integer
     Dim total As Integer
 
@@ -73,8 +73,10 @@
         'frmMainMenu.DataGridView1.Rows.Clear()
         If DataGridView2.CurrentCell IsNot Nothing Then
             Dim selectedRow As DataGridViewRow = DataGridView2.CurrentCell.OwningRow
+            Dim index As Integer = selectedRow.Index
             Try
                 DataGridView2.Rows.Remove(selectedRow)
+                frmMainMenu.DataGridView1.Rows.RemoveAt(index)
             Catch ex As System.InvalidOperationException
                 MsgBox("No item selected!", vbOKOnly + vbExclamation, "No Item")
             End Try
@@ -153,11 +155,13 @@
     End Sub
 
     Private Sub frmPaymentMenu_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
+
+
         DataGridView2.Rows.Clear()
         DuplicateDataGridView()
         UpdateTotalAmount()
         lblTotal.Text = total
-        update = False
+        paymentUpdate = False
 
     End Sub
 
