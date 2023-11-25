@@ -25,6 +25,9 @@
                 DataGridView1.Rows.Add(newRow)
             Next
         End If
+        DataGridView1.Columns(0).Width = 135
+        DataGridView1.Columns(1).Width = 30
+        DataGridView1.Columns(2).Width = 42
     End Sub
 
     Private Sub frmMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -81,6 +84,8 @@
     End Sub
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
         totalofAll = 0
+        frmPaymentMenu.DataGridView2.Rows.Clear()
+        frmPaymentMenu.DataGridView2.Columns.Clear()
 
         For Each row As DataGridViewRow In DataGridView1.Rows
             If Not row.IsNewRow Then
