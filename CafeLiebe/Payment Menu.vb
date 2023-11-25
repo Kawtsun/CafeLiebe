@@ -177,6 +177,7 @@
         Dim amt As Integer = Val(lblTotal.Text)
 
         If amt <= 0 Then
+            frmMainMenu.DataGridView1.Rows.Clear()
             MsgBox("No item/s selected", vbOKOnly + vbExclamation, "No Item/s")
         Else
             If serviceType IsNot "" Then
