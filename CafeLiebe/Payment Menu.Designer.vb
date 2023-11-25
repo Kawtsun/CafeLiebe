@@ -295,6 +295,7 @@ Partial Class frmPaymentMenu
         pnlCalcu.Controls.Add(btnClear)
         pnlCalcu.Controls.Add(pnlMiddle)
         pnlCalcu.Dock = DockStyle.Bottom
+        pnlCalcu.Enabled = False
         pnlCalcu.Location = New Point(455, 231)
         pnlCalcu.Name = "pnlCalcu"
         pnlCalcu.Size = New Size(479, 330)
@@ -417,7 +418,7 @@ Partial Class frmPaymentMenu
         btnBaack.Name = "btnBaack"
         btnBaack.Size = New Size(122, 82)
         btnBaack.TabIndex = 14
-        btnBaack.Text = "Backspace"
+        btnBaack.Text = "Back"
         btnBaack.UseVisualStyleBackColor = False
         ' 
         ' btn10

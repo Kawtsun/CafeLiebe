@@ -1,5 +1,6 @@
 ﻿Public Class frmPaymentMenu
     Public Property recieverTotal As Integer
+    Public Property serviceType As String = ""
     Dim index, change As Integer
     Dim total As Integer
 
@@ -63,8 +64,8 @@
     Private Sub frmPaymentMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DuplicateDataGridView()
         UpdateTotalAmount()
-        lblAmount.Text = total
         lblTotal.Text = total
+        'lblAmount.Text = total
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
@@ -86,8 +87,8 @@
     Private Sub btnCancelAll_Click(sender As Object, e As EventArgs) Handles btnCancelAll.Click
         DataGridView2.Rows.Clear()
         UpdateTotalAmount()
-        lblAmount.Text = total
         lblTotal.Text = total
+        'lblAmount.Text = total
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
@@ -131,9 +132,9 @@
     End Sub
 
     Private Sub btnBaack_Click(sender As Object, e As EventArgs) Handles btnBaack.Click
-        If txtTendered.Text.Length > 0 Then
-            txtTendered.Text = txtTendered.Text.Remove(txtTendered.Text.Length - 1, 1)
-        End If
+        pnlLeft.Enabled = True
+        pnlRight.Enabled = True
+        pnlCalcu.Enabled = False
     End Sub
 
     Private Sub txtTendered_TextChanged(sender As Object, e As EventArgs) Handles txtTendered.TextChanged
@@ -152,17 +153,41 @@
         DataGridView2.Rows.Clear()
         DuplicateDataGridView()
         UpdateTotalAmount()
-        lblAmount.Text = total
         lblTotal.Text = total
+
     End Sub
 
     Private Sub btnDineIn_Click(sender As Object, e As EventArgs) Handles btnDineIn.Click
         btnTakeOut.BackColor = System.Drawing.Color.FromArgb(254, 245, 230)
         btnDineIn.BackColor = System.Drawing.Color.White
+
+        serviceType = "Dine In"
     End Sub
 
     Private Sub btnTakeOut_Click(sender As Object, e As EventArgs) Handles btnTakeOut.Click
         btnTakeOut.BackColor = System.Drawing.Color.White
         btnDineIn.BackColor = System.Drawing.Color.FromArgb(254, 245, 230)
+
+        serviceType = "Take Out"
+    End Sub
+
+    Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+        Dim amt As Integer = Val(lblTotal.Text)
+
+        If amt <= 0 Then
+            MsgBox("No item/s selected", vbOKOnly + vbExclamation, "No Item/s")
+        Else
+            If serviceType IsNot "" Then
+                lblAmount.Text = lblTotal.Text
+                pnlCalcu.Enabled = True
+
+                pnlRight.Enabled = False
+                pnlLeft.Enabled = False
+
+            Else
+                MsgBox("Please select a Foodservice", vbOKOnly + vbExclamation, "Foodservice")
+            End If
+        End If
+
     End Sub
 End Class
