@@ -499,6 +499,7 @@ Partial Class frmPaymentMenu
         ' 
         ' txtTendered
         ' 
+        txtTendered.Enabled = False
         txtTendered.Font = New Font("Segoe UI Black", 14.25F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
         txtTendered.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
         txtTendered.Location = New Point(151, 37)

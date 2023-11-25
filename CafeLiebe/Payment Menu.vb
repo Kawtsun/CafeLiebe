@@ -58,8 +58,12 @@
     End Sub
 
     Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
-        frmReceipt.Show()
-        Me.Hide()
+        If Val(txtTendered.Text) - Val(lblAmount.Text) >= 0 Then
+            frmReceipt.Show()
+            Me.Hide()
+        Else
+            MsgBox("Invalid Amount", vbOKOnly + vbExclamation, "Invalid")
+        End If
     End Sub
 
     Private Sub frmPaymentMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -194,7 +198,7 @@
                 pnlLeft.Enabled = False
 
             Else
-                MsgBox("Please select a Foodservice", vbOKOnly + vbExclamation, "Foodservice")
+                MsgBox("Please select a Service", vbOKOnly + vbExclamation, "Service")
             End If
         End If
 

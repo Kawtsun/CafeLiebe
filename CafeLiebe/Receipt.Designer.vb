@@ -149,7 +149,7 @@ Partial Class frmReceipt
         lblFoodservice.Name = "lblFoodservice"
         lblFoodservice.Size = New Size(126, 25)
         lblFoodservice.TabIndex = 13
-        lblFoodservice.Text = "Foodservice"
+        lblFoodservice.Text = "Service"
         lblFoodservice.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Label3
@@ -158,11 +158,11 @@ Partial Class frmReceipt
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
         Label3.ForeColor = Color.FromArgb(CByte(62), CByte(47), CByte(40))
-        Label3.Location = New Point(421, 298)
+        Label3.Location = New Point(445, 298)
         Label3.Name = "Label3"
-        Label3.Size = New Size(77, 17)
+        Label3.Size = New Size(51, 17)
         Label3.TabIndex = 12
-        Label3.Text = "Foodservice"
+        Label3.Text = "Service"
         ' 
         ' Label4
         ' 
