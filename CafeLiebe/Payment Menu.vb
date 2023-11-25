@@ -39,7 +39,7 @@
                 DataGridView2.Rows.Add(newRow)
             Next
         End If
-        DataGridView2.Columns(0).Width = 250
+        DataGridView2.Columns(0).Width = 291
         DataGridView2.Columns(1).Width = 50
         DataGridView2.Columns(2).Width = 74
     End Sub

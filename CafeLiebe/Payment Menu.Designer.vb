@@ -263,6 +263,8 @@ Partial Class frmPaymentMenu
         ' 
         DataGridView2.AllowUserToAddRows = False
         DataGridView2.AllowUserToDeleteRows = False
+        DataGridView2.AllowUserToResizeColumns = False
+        DataGridView2.AllowUserToResizeRows = False
         DataGridView2.BackgroundColor = Color.FromArgb(CByte(254), CByte(245), CByte(230))
         DataGridView2.BorderStyle = BorderStyle.Fixed3D
         DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -270,7 +272,9 @@ Partial Class frmPaymentMenu
         DataGridView2.Location = New Point(0, 0)
         DataGridView2.Name = "DataGridView2"
         DataGridView2.ReadOnly = True
+        DataGridView2.RowHeadersVisible = False
         DataGridView2.RowTemplate.Height = 25
+        DataGridView2.ScrollBars = ScrollBars.None
         DataGridView2.Size = New Size(417, 403)
         DataGridView2.TabIndex = 0
         ' 
