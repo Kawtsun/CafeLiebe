@@ -49,6 +49,8 @@
     End Function
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        frmMainMenu.DataGridView1.Rows.Clear()
+        frmMainMenu.DataGridView1.Columns.Clear()
         frmMainMenu.Show()
         Me.Hide()
     End Sub
@@ -129,10 +131,9 @@
     End Sub
 
     Private Sub btnBaack_Click(sender As Object, e As EventArgs) Handles btnBaack.Click
-        frmMainMenu.DataGridView1.Rows.Clear()
-        frmMainMenu.DataGridView1.Columns.Clear()
-        frmMainMenu.Show()
-        Me.Hide()
+        If txtTendered.Text.Length > 0 Then
+            txtTendered.Text = txtTendered.Text.Remove(txtTendered.Text.Length - 1, 1)
+        End If
     End Sub
 
     Private Sub txtTendered_TextChanged(sender As Object, e As EventArgs) Handles txtTendered.TextChanged
@@ -153,5 +154,15 @@
         UpdateTotalAmount()
         lblAmount.Text = total
         lblTotal.Text = total
+    End Sub
+
+    Private Sub btnDineIn_Click(sender As Object, e As EventArgs) Handles btnDineIn.Click
+        btnTakeOut.BackColor = System.Drawing.Color.FromArgb(254, 245, 230)
+        btnDineIn.BackColor = System.Drawing.Color.White
+    End Sub
+
+    Private Sub btnTakeOut_Click(sender As Object, e As EventArgs) Handles btnTakeOut.Click
+        btnTakeOut.BackColor = System.Drawing.Color.White
+        btnDineIn.BackColor = System.Drawing.Color.FromArgb(254, 245, 230)
     End Sub
 End Class

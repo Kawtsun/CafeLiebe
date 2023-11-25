@@ -417,7 +417,7 @@ Partial Class frmPaymentMenu
         btnBaack.Name = "btnBaack"
         btnBaack.Size = New Size(122, 82)
         btnBaack.TabIndex = 14
-        btnBaack.Text = "Back"
+        btnBaack.Text = "Backspace"
         btnBaack.UseVisualStyleBackColor = False
         ' 
         ' btn10
