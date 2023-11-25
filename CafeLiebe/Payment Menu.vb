@@ -57,7 +57,7 @@
     End Sub
 
     Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
-        frmHomeWindow.Show()
+        frmReceipt.Show()
         Me.Hide()
     End Sub
 
