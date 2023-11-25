@@ -197,16 +197,21 @@ Partial Class frmMainMenu
         ' 
         DataGridView1.AllowUserToAddRows = False
         DataGridView1.AllowUserToDeleteRows = False
+        DataGridView1.AllowUserToResizeColumns = False
+        DataGridView1.AllowUserToResizeRows = False
         DataGridView1.BackgroundColor = Color.FromArgb(CByte(254), CByte(245), CByte(230))
         DataGridView1.BorderStyle = BorderStyle.Fixed3D
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Columns.AddRange(New DataGridViewColumn() {Item, QTY, Price})
         DataGridView1.Dock = DockStyle.Fill
+        DataGridView1.EditMode = DataGridViewEditMode.EditOnKeystroke
         DataGridView1.ImeMode = ImeMode.NoControl
         DataGridView1.Location = New Point(0, 0)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.ReadOnly = True
+        DataGridView1.RowHeadersVisible = False
         DataGridView1.RowTemplate.Height = 25
+        DataGridView1.ScrollBars = ScrollBars.None
         DataGridView1.Size = New Size(250, 278)
         DataGridView1.TabIndex = 4
         ' 
@@ -215,7 +220,7 @@ Partial Class frmMainMenu
         Item.HeaderText = "Item"
         Item.Name = "Item"
         Item.ReadOnly = True
-        Item.Width = 135
+        Item.Width = 176
         ' 
         ' QTY
         ' 
