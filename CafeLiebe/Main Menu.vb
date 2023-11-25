@@ -81,7 +81,16 @@
     End Sub
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
         totalofAll = 0
-        totalofAll += frmCoffeeTab.sumTotalCoffee + frmCakeTab.sumTotalCake + frmDesertTab.sumTotalDesert
+
+        For Each row As DataGridViewRow In DataGridView1.Rows
+            If Not row.IsNewRow Then
+                Dim cellValue As Object = row.Cells(2).Value
+                If cellValue IsNot Nothing AndAlso Not IsDBNull(cellValue) Then
+                    Dim value As Integer = Int32.Parse(Val(cellValue))
+                    totalofAll += value
+                End If
+            End If
+        Next
         frmPaymentMenu.Show()
         Me.Hide()
     End Sub
@@ -104,7 +113,7 @@
         DataGridView1.Rows.Clear()
     End Sub
 
-    Private Sub frmMainMenu_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+    Private Sub frmMainMenu_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         DataGridView1.Rows.Clear()
         DuplicateDataGridView()
     End Sub
