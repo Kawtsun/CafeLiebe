@@ -261,6 +261,7 @@ Partial Class frmPaymentMenu
         ' 
         ' DataGridView2
         ' 
+        DataGridView2.AccessibleRole = AccessibleRole.None
         DataGridView2.AllowUserToAddRows = False
         DataGridView2.AllowUserToDeleteRows = False
         DataGridView2.AllowUserToResizeColumns = False

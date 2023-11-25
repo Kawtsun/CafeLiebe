@@ -135,6 +135,8 @@
         pnlLeft.Enabled = True
         pnlRight.Enabled = True
         pnlCalcu.Enabled = False
+
+        lblAmount.Text = "00.00"
     End Sub
 
     Private Sub txtTendered_TextChanged(sender As Object, e As EventArgs) Handles txtTendered.TextChanged
