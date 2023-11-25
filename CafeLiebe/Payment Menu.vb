@@ -49,8 +49,6 @@
     End Function
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        frmMainMenu.DataGridView1.Rows.Clear()
-        frmMainMenu.DataGridView1.Columns.Clear()
         frmMainMenu.Show()
         Me.Hide()
     End Sub
@@ -61,7 +59,6 @@
     End Sub
 
     Private Sub frmPaymentMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DataGridView2.Rows.Clear()
         DuplicateDataGridView()
         UpdateTotalAmount()
         lblAmount.Text = total
