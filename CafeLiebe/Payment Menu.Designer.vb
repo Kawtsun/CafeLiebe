@@ -261,6 +261,8 @@ Partial Class frmPaymentMenu
         ' 
         ' DataGridView2
         ' 
+        DataGridView2.AllowUserToAddRows = False
+        DataGridView2.AllowUserToDeleteRows = False
         DataGridView2.BackgroundColor = Color.FromArgb(CByte(254), CByte(245), CByte(230))
         DataGridView2.BorderStyle = BorderStyle.Fixed3D
         DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
